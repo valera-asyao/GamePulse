@@ -1,0 +1,72 @@
+<div class="space-y-8">
+
+  <!-- Header & Algorithm Explainer -->
+  <div class="bg-gradient-to-br from-purple-950/60 via-slate-900 to-indigo-950/60 border border-purple-800/40 rounded-3xl p-6 sm:p-8 shadow-2xl">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div class="space-y-2 max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-900/50 border border-purple-700/50 text-purple-300 text-xs font-semibold">
+          <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Умный подбор игр
+        </div>
+        <h1 class="text-3xl font-extrabold text-white tracking-tight">
+          Персональные рекомендации для <%= @user.display_name %>
+        </h1>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Наш рекомендательный движок анализирует историю ваших оценок, сравнивает её с базой игроков со схожими вкусами и формирует индивидуальный топ.
+        </p>
+      </div>
+
+      <!-- Refresh / Recalculate Button -->
+      <div class="shrink-0 flex items-center gap-3">
+        <%= button_to refresh_recommendations_path, method: :post, class: "px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs shadow-lg shadow-purple-600/30 flex items-center gap-2 cursor-pointer transition-all active:scale-95", data: { turbo: true } do %>
+          <i class="fa-solid fa-arrows-rotate"></i>
+          <span>Пересчитать рекомендации</span>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- Algorithm breakdown formula cards -->
+    <div class="mt-8 pt-6 border-t border-slate-800/80">
+      <div class="text-xs font-semibold text-slate-300 mb-3 flex items-center gap-2">
+        <i class="fa-solid fa-calculator text-purple-400"></i> Формула гибридного рейтинга:
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+        <div class="p-3 rounded-2xl bg-slate-900/80 border border-purple-900/50">
+          <div class="flex items-center justify-between text-purple-300 font-bold mb-1">
+            <span>Контентные жанры</span>
+            <span>40%</span>
+          </div>
+          <p class="text-[10px] text-slate-400">Совпадение по жанрам, тегам и механикам ваших любимых игр</p>
+        </div>
+
+        <div class="p-3 rounded-2xl bg-slate-900/80 border border-indigo-900/50">
+          <div class="flex items-center justify-between text-indigo-300 font-bold mb-1">
+            <span>Коллаборация</span>
+            <span>30%</span>
+          </div>
+          <p class="text-[10px] text-slate-400">Оценки пользователей с похожей историей и вкусами</p>
+        </div>
+
+        <div class="p-3 rounded-2xl bg-slate-900/80 border border-amber-900/50">
+          <div class="flex items-center justify-between text-amber-300 font-bold mb-1">
+            <span>Популярность</span>
+            <span>20%</span>
+          </div>
+          <p class="text-[10px] text-slate-400">Общий рейтинг игры и признание игрового сообщества</p>
+        </div>
+
+        <div class="p-3 rounded-2xl bg-slate-900/80 border border-emerald-900/50">
+          <div class="flex items-center justify-between text-emerald-300 font-bold mb-1">
+            <span>Новизна</span>
+            <span>10%</span>
+          </div>
+          <p class="text-[10px] text-slate-400">Свежесть релиза игры и актуальность</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recommendations List Partial Container -->
+  <%= render partial: "recommendations/list", locals: { recommendations: @recommendations } %>
+
+</div>
