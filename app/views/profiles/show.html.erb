@@ -1,0 +1,113 @@
+<div class="space-y-8 max-w-5xl mx-auto">
+
+  <!-- Profile Card -->
+  <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-5">
+        <% if @user.avatar_image_url.present? %>
+          <img src="<%= @user.avatar_image_url %>" alt="<%= @user.display_name %>" class="w-20 h-20 rounded-2xl object-cover border-2 border-purple-500/60 shadow-xl shadow-purple-600/30 shrink-0">
+        <% else %>
+          <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center font-black text-2xl text-white shadow-xl shadow-purple-600/30 shrink-0">
+            <%= @user.display_name.first.upcase rescue "U" %>
+          </div>
+        <% end %>
+        <div>
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            <%= @user.display_name %>
+          </h1>
+          <div class="text-xs text-slate-400 mt-1 flex items-center gap-3">
+            <span>@<%= @user.username %></span>
+            <span>•</span>
+            <span><%= @user.email_address %></span>
+          </div>
+          <% if @user.bio.present? %>
+            <p class="text-xs text-slate-300 mt-2 max-w-lg leading-relaxed"><%= @user.bio %></p>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="/profile/edit" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700/80 border border-slate-700 text-xs font-semibold text-slate-200 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-pen-to-square"></i> Редактировать профиль
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="mt-8 pt-6 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-750 text-center">
+        <div class="text-slate-400 text-xs">Оценено игр</div>
+        <div class="text-xl font-bold text-white mt-1"><%= @rated_games.count %></div>
+      </div>
+      <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-750 text-center">
+        <div class="text-slate-400 text-xs">В избранном</div>
+        <div class="text-xl font-bold text-amber-400 mt-1"><%= @favorite_games.count %></div>
+      </div>
+      <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-750 text-center">
+        <div class="text-slate-400 text-xs">Пройдено игр</div>
+        <div class="text-xl font-bold text-emerald-400 mt-1"><%= @interactions.where(status: 'completed').count %></div>
+      </div>
+      <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-750 text-center">
+        <div class="text-slate-400 text-xs">Всего часов</div>
+        <div class="text-xl font-bold text-purple-400 mt-1"><%= @interactions.sum(:hours_played) %> ч.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- User's Rated Games Collection -->
+  <div class="space-y-4">
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-bold text-white flex items-center gap-2">
+        <i class="fa-solid fa-star text-amber-400"></i> Мои оценки и активность
+      </h2>
+      <span class="text-xs text-slate-400"><%= @interactions.count %> записей</span>
+    </div>
+
+    <% if @interactions.any? %>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <% @interactions.each do |interaction| %>
+          <% game = interaction.game %>
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex gap-3.5 shadow-md items-center">
+            <a href="<%= game_path(game) %>" class="relative w-24 aspect-[460/215] rounded-xl overflow-hidden shrink-0 bg-slate-950 border border-slate-800/80 flex items-center justify-center shadow">
+              <img src="<%= game.image_url %>" class="absolute inset-0 w-full h-full object-cover blur-sm opacity-20 scale-110 pointer-events-none">
+              <img src="<%= game.image_url %>" alt="<%= game.title %>" class="relative z-10 w-full h-full object-contain">
+            </a>
+            <div class="flex-1 flex flex-col justify-between min-w-0">
+              <div>
+                <a href="<%= game_path(game) %>" class="font-bold text-sm text-white hover:text-purple-400 transition-colors truncate block">
+                  <%= game.title %>
+                </a>
+                <div class="text-[11px] text-slate-400 mt-0.5">
+                  <% if interaction.rating %>
+                    <span class="text-amber-400 font-bold">★ <%= interaction.rating %>/10</span>
+                  <% end %>
+                  <% if interaction.status.present? && interaction.status != 'none' %>
+                    <span class="ml-1 text-slate-400">• <%= interaction.status %></span>
+                  <% end %>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs">
+                <% if interaction.liked %>
+                  <span class="text-rose-400"><i class="fa-solid fa-heart"></i></span>
+                <% end %>
+                <% if interaction.favorite %>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i></span>
+                <% end %>
+                <% if interaction.hours_played > 0 %>
+                  <span class="text-[10px] text-slate-400"><%= interaction.hours_played %>ч</span>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <div class="p-8 text-center bg-slate-900 border border-slate-800 rounded-2xl text-slate-400 text-xs">
+        Вы ещё не оценили ни одной игры. <a href="/" class="text-purple-400 hover:text-purple-300 ml-1">Перейти в каталог</a>
+      </div>
+    <% end %>
+  </div>
+
+</div>
