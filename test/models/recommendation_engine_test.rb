@@ -39,7 +39,7 @@ class RecommendationEngineTest < ActiveSupport::TestCase
   end
 
   test "enqueues recommendation job and calculates on interaction save" do
-    assert_enqueued_with(job: RecommendationJob, args: [@user_a.id]) do
+    assert_enqueued_with(job: RecommendationJob, args: [ @user_a.id ]) do
       Interaction.create!(user: @user_a, game: @game1, rating: 10, liked: true)
     end
 

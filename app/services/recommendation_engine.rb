@@ -33,7 +33,7 @@ class RecommendationEngine
     user_similarities = compute_user_similarities(user_interactions)
 
     # Max popularity in candidate pool for normalization
-    max_popularity = [candidates.map(&:popularity_score).max.to_f, 1.0].max
+    max_popularity = [ candidates.map(&:popularity_score).max.to_f, 1.0 ].max
     now = Date.current
 
     recommendations = []
@@ -46,7 +46,7 @@ class RecommendationEngine
       collab_score, collab_details = compute_collaborative_score(game, user_similarities)
 
       # 3. Popularity score (0.0 .. 1.0)
-      pop_score = [(game.popularity_score / max_popularity).clamp(0.0, 1.0), 0.0].max
+      pop_score = [ (game.popularity_score / max_popularity).clamp(0.0, 1.0), 0.0 ].max
 
       # 4. Recency / Freshness score (0.0 .. 1.0)
       recency_score = compute_recency_score(game, now)
@@ -88,9 +88,9 @@ class RecommendationEngine
 
     # Invalidate / warm cache
     cache_key = "user:#{@user.id}:recommendations"
-    Rails.cache.write(cache_key, @user.user_recommendations.includes(game: [:genres, :tags]).to_a, expires_in: 2.hours)
+    Rails.cache.write(cache_key, @user.user_recommendations.includes(game: [ :genres, :tags ]).to_a, expires_in: 2.hours)
 
-    @user.user_recommendations.includes(game: [:genres, :tags])
+    @user.user_recommendations.includes(game: [ :genres, :tags ])
   end
 
   private
@@ -102,11 +102,11 @@ class RecommendationEngine
       # Base multiplier from rating or interaction
       multiplier = if interaction.rating.present?
                      (interaction.rating - 5.0) / 5.0 # -0.8 to +1.0
-                   elsif interaction.liked || interaction.favorite
+      elsif interaction.liked || interaction.favorite
                      0.8
-                   else
+      else
                      0.2
-                   end
+      end
       multiplier += 0.3 if interaction.favorite
       multiplier += 0.2 if interaction.liked
 
@@ -133,7 +133,7 @@ class RecommendationEngine
     my_ratings = interactions.select { |i| i.rating.present? }
     return {} if my_ratings.empty?
 
-    my_ratings_map = my_ratings.to_h { |i| [i.game_id, i.rating] }
+    my_ratings_map = my_ratings.to_h { |i| [ i.game_id, i.rating ] }
     common_games = my_ratings_map.keys
 
     # Find other users who rated at least one common game
@@ -144,7 +144,7 @@ class RecommendationEngine
 
     similarities = {}
     other_interactions.each do |other_user_id, o_ints|
-      o_ratings_map = o_ints.to_h { |i| [i.game_id, i.rating] }
+      o_ratings_map = o_ints.to_h { |i| [ i.game_id, i.rating ] }
 
       shared_keys = common_games & o_ratings_map.keys
       next if shared_keys.empty?
@@ -166,7 +166,7 @@ class RecommendationEngine
   def compute_content_score(game, user_genre_weights, user_tag_weights)
     if user_genre_weights.empty? && user_tag_weights.empty?
       # Cold start: fallback to game's own normalized quality
-      return [(game.average_rating / 10.0), []]
+      return [ (game.average_rating / 10.0), [] ]
     end
 
     matched_genres = []
@@ -189,13 +189,13 @@ class RecommendationEngine
     # Normalize roughly to 0..1 scale
     total_raw = (genre_score * 0.7) + (tag_score * 0.3)
     normalized = (total_raw / 3.0).clamp(0.0, 1.0)
-    [normalized, matched_genres.compact.uniq]
+    [ normalized, matched_genres.compact.uniq ]
   end
 
   def compute_collaborative_score(game, user_similarities)
     if user_similarities.empty?
       # Fallback to normalized average rating
-      return [(game.average_rating / 10.0), { similar_users_count: 0 }]
+      return [ (game.average_rating / 10.0), { similar_users_count: 0 } ]
     end
 
     # Find ratings of this game by similar users
@@ -204,7 +204,7 @@ class RecommendationEngine
 
     if neighbor_ratings.empty?
       # Fallback to general rating
-      return [(game.average_rating / 10.0) * 0.8, { similar_users_count: 0 }]
+      return [ (game.average_rating / 10.0) * 0.8, { similar_users_count: 0 } ]
     end
 
     weighted_sum = 0.0
@@ -219,7 +219,7 @@ class RecommendationEngine
     predicted_rating = weights_sum > 0 ? (weighted_sum / weights_sum) : game.average_rating
     normalized = (predicted_rating / 10.0).clamp(0.0, 1.0)
 
-    [normalized, { similar_users_count: neighbor_ratings.count, predicted_rating: predicted_rating.round(1) }]
+    [ normalized, { similar_users_count: neighbor_ratings.count, predicted_rating: predicted_rating.round(1) } ]
   end
 
   def compute_recency_score(game, current_date)
@@ -235,7 +235,7 @@ class RecommendationEngine
     elsif years_ago <= 6.0
       0.55
     else
-      [0.3, 0.9 - (years_ago * 0.05)].max
+      [ 0.3, 0.9 - (years_ago * 0.05) ].max
     end
   end
 

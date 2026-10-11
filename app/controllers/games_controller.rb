@@ -9,13 +9,13 @@ class GamesController < ApplicationController
     if @tab == "recommended"
       if current_user
         @user_recommendations = current_user.user_recommendations
-                                            .includes(game: [:genres, :tags])
+                                            .includes(game: [ :genres, :tags ])
                                             .order(score: :desc)
 
         if @user_recommendations.empty? && current_user.interactions.any?
           RecommendationEngine.calculate_for(current_user)
           @user_recommendations = current_user.user_recommendations
-                                              .includes(game: [:genres, :tags])
+                                              .includes(game: [ :genres, :tags ])
                                               .order(score: :desc)
         end
 
@@ -46,27 +46,27 @@ class GamesController < ApplicationController
 
       @sort = params[:sort] || "popular"
       @games = case @sort
-               when "top_rated"
+      when "top_rated"
                  scope.top_rated
-               when "recent"
+      when "recent"
                  scope.recent
-               when "title"
+      when "title"
                  scope.order(:title)
-               else
+      else
                  scope.popular
-               end
+      end
 
       # Recommendations preview for the homepage
       if current_user
         @user_recommendations = current_user.user_recommendations
-                                            .includes(game: [:genres, :tags])
+                                            .includes(game: [ :genres, :tags ])
                                             .order(score: :desc)
                                             .limit(6)
 
         if @user_recommendations.empty? && current_user.interactions.any?
           RecommendationEngine.calculate_for(current_user)
           @user_recommendations = current_user.user_recommendations
-                                              .includes(game: [:genres, :tags])
+                                              .includes(game: [ :genres, :tags ])
                                               .order(score: :desc)
                                               .limit(6)
         end

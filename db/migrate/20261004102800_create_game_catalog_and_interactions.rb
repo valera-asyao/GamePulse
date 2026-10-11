@@ -44,7 +44,7 @@ class CreateGameCatalogAndInteractions < ActiveRecord::Migration[8.1]
 
       t.timestamps
     end
-    add_index :game_genres, [:game_id, :genre_id], unique: true
+    add_index :game_genres, [ :game_id, :genre_id ], unique: true
 
     create_table :game_tags do |t|
       t.references :game, null: false, foreign_key: true
@@ -52,7 +52,7 @@ class CreateGameCatalogAndInteractions < ActiveRecord::Migration[8.1]
 
       t.timestamps
     end
-    add_index :game_tags, [:game_id, :tag_id], unique: true
+    add_index :game_tags, [ :game_id, :tag_id ], unique: true
 
     create_table :interactions do |t|
       t.references :user, null: false, foreign_key: true
@@ -67,7 +67,7 @@ class CreateGameCatalogAndInteractions < ActiveRecord::Migration[8.1]
 
       t.timestamps
     end
-    add_index :interactions, [:user_id, :game_id], unique: true
+    add_index :interactions, [ :user_id, :game_id ], unique: true
     add_index :interactions, :rating
     add_index :interactions, :liked
     add_index :interactions, :favorite
@@ -84,7 +84,7 @@ class CreateGameCatalogAndInteractions < ActiveRecord::Migration[8.1]
 
       t.timestamps
     end
-    add_index :user_recommendations, [:user_id, :game_id], unique: true
-    add_index :user_recommendations, [:user_id, :score]
+    add_index :user_recommendations, [ :user_id, :game_id ], unique: true
+    add_index :user_recommendations, [ :user_id, :score ]
   end
 end

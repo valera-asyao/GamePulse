@@ -2,10 +2,10 @@ class ProfilesController < ApplicationController
   before_action :set_user
 
   def show
-    @interactions = @user.interactions.includes(game: [:genres]).order(updated_at: :desc)
+    @interactions = @user.interactions.includes(game: [ :genres ]).order(updated_at: :desc)
     @rated_games = @interactions.where.not(rating: nil)
     @favorite_games = @interactions.where(favorite: true)
-    @top_recommendations = @user.user_recommendations.includes(game: [:genres]).order(score: :desc).limit(6)
+    @top_recommendations = @user.user_recommendations.includes(game: [ :genres ]).order(score: :desc).limit(6)
   end
 
   def edit

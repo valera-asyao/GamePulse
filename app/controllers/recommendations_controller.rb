@@ -2,7 +2,7 @@ class RecommendationsController < ApplicationController
   def index
     @user = current_user
     @recommendations = @user.user_recommendations
-                            .includes(game: [:genres, :tags])
+                            .includes(game: [ :genres, :tags ])
                             .order(score: :desc)
 
     if @recommendations.empty? && @user.interactions.any?
@@ -19,7 +19,7 @@ class RecommendationsController < ApplicationController
 
     respond_to do |format|
       format.turbo_stream do
-        @recommendations = @user.user_recommendations.includes(game: [:genres, :tags]).order(score: :desc)
+        @recommendations = @user.user_recommendations.includes(game: [ :genres, :tags ]).order(score: :desc)
         render turbo_stream: turbo_stream.replace("recommendations_container", partial: "recommendations/list", locals: { recommendations: @recommendations })
       end
       format.html { redirect_to recommendations_path, notice: "Рекомендации успешно обновлены!" }

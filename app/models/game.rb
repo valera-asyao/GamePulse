@@ -40,12 +40,14 @@ class Game < ApplicationRecord
 
   # Find content-similar games based on shared genres and tags
   def similar_games(limit = 6)
-    genre_ids = self.genre_ids
-    tag_ids = self.tag_ids
+    g_ids = genre_ids
+    t_ids = tag_ids
+
+    return Game.where.not(id: id).popular.limit(limit) if g_ids.empty? && t_ids.empty?
 
     Game.where.not(id: id)
-        .joins("LEFT JOIN game_genres ON game_genres.game_id = games.id AND game_genres.genre_id IN (#{genre_ids.any? ? genre_ids.join(',') : 'NULL'})")
-        .joins("LEFT JOIN game_tags ON game_tags.game_id = games.id AND game_tags.tag_id IN (#{tag_ids.any? ? tag_ids.join(',') : 'NULL'})")
+        .left_joins(:game_genres, :game_tags)
+        .where("game_genres.genre_id IN (?) OR game_tags.tag_id IN (?)", g_ids.presence || [ 0 ], t_ids.presence || [ 0 ])
         .group("games.id")
         .order(Arel.sql("COUNT(DISTINCT game_genres.genre_id) * 2 + COUNT(DISTINCT game_tags.tag_id) DESC, games.average_rating DESC"))
         .limit(limit)
