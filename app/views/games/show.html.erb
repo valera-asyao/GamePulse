@@ -1,0 +1,137 @@
+<div class="space-y-8">
+  <!-- Breadcrumb -->
+  <div class="flex items-center gap-2 text-xs text-slate-400">
+    <a href="/" class="hover:text-purple-400">Главная</a>
+    <span>/</span>
+    <a href="/games" class="hover:text-purple-400">Игры</a>
+    <span>/</span>
+    <span class="text-slate-200 font-medium"><%= @game.title %></span>
+  </div>
+
+  <!-- Game Main Card -->
+  <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 sm:p-8">
+      
+      <!-- Poster -->
+      <div class="space-y-4">
+        <div class="relative aspect-[460/215] rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 shadow-xl flex items-center justify-center">
+          <img src="<%= @game.image_url %>" class="absolute inset-0 w-full h-full object-cover blur-md opacity-25 scale-110 pointer-events-none">
+          <img src="<%= @game.image_url %>" alt="<%= @game.title %>" class="relative z-10 w-full h-full object-contain">
+          
+          <div class="absolute top-3 left-3 z-20 bg-black/85 backdrop-blur-md px-3 py-1.5 rounded-xl border border-amber-500/30 flex items-center gap-1.5 shadow-lg">
+            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+            <span class="text-sm font-bold text-amber-300"><%= @game.average_rating %></span>
+            <span class="text-[10px] text-slate-400">/ 10</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 text-center text-xs">
+          <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-750">
+            <div class="text-slate-400 text-[10px]">Оценок</div>
+            <div class="text-sm font-bold text-white mt-0.5"><%= @game.ratings_count %></div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-750">
+            <div class="text-slate-400 text-[10px]">Просмотров</div>
+            <div class="text-sm font-bold text-white mt-0.5"><%= @game.views_count %></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Details & Interaction -->
+      <div class="lg:col-span-2 flex flex-col justify-between space-y-6">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <% @game.genres.each do |genre| %>
+              <a href="/games?genre=<%= genre.slug %>" class="px-3 py-1 rounded-lg bg-purple-950/80 hover:bg-purple-900 border border-purple-800 text-purple-300 text-xs font-semibold transition-colors">
+                <%= genre.name %>
+              </a>
+            <% end %>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            <%= @game.title %>
+          </h1>
+
+          <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 py-4 border-y border-slate-800 text-xs">
+            <div>
+              <div class="text-slate-400 text-[11px]">Дата выхода</div>
+              <div class="text-white font-medium mt-0.5"><%= @game.release_date&.strftime("%d.%m.%Y") || "—" %></div>
+            </div>
+            <div>
+              <div class="text-slate-400 text-[11px]">Разработчик</div>
+              <div class="text-white font-medium mt-0.5"><%= @game.developer || "—" %></div>
+            </div>
+            <div>
+              <div class="text-slate-400 text-[11px]">Издатель</div>
+              <div class="text-white font-medium mt-0.5"><%= @game.publisher || "—" %></div>
+            </div>
+            <div>
+              <div class="text-slate-400 text-[11px]">Платформы</div>
+              <div class="text-white font-medium mt-0.5"><%= @game.platforms || "PC" %></div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="mt-4">
+            <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Об игре</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              <%= @game.description %>
+            </p>
+          </div>
+
+          <!-- Tags -->
+          <% if @game.tags.any? %>
+            <div class="mt-4">
+              <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Теги</h3>
+              <div class="flex flex-wrap gap-1.5">
+                <% @game.tags.each do |tag| %>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700/80 text-xs text-slate-300">
+                    #<%= tag.name %>
+                  </span>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+
+        <!-- Turbo stream interactive rating box -->
+        <%= render partial: "interactions/form", locals: { game: @game, interaction: @interaction } %>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Similar Games (Content-based recommendations) -->
+  <% if @similar_games.any? %>
+    <div class="space-y-4 pt-6">
+      <div>
+        <h2 class="text-xl font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-layer-group text-purple-400"></i>
+          Похожие игры (по жанрам и тегам)
+        </h2>
+        <p class="text-xs text-slate-400 mt-0.5">Контентная фильтрация на основе схожести с <%= @game.title %></p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <% @similar_games.each do |similar| %>
+          <a href="<%= game_path(similar) %>" class="group bg-slate-900 border border-slate-800 hover:border-purple-500/60 rounded-2xl overflow-hidden p-3 transition-all hover:-translate-y-1 block shadow-lg">
+            <div class="relative aspect-[460/215] rounded-xl overflow-hidden bg-slate-950 border border-slate-800/80 mb-3 flex items-center justify-center">
+              <img src="<%= similar.image_url %>" class="absolute inset-0 w-full h-full object-cover blur-sm opacity-20 scale-110 pointer-events-none">
+              <img src="<%= similar.image_url %>" alt="<%= similar.title %>" class="relative z-10 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute top-1.5 left-1.5 z-20 bg-black/80 px-2 py-0.5 rounded-lg text-[10px] font-bold text-amber-300 border border-amber-500/20">
+                ★ <%= similar.average_rating %>
+              </div>
+            </div>
+            <div class="font-bold text-sm text-white group-hover:text-purple-400 transition-colors truncate">
+              <%= similar.title %>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-1 truncate">
+              <%= similar.genres.map(&:name).join(', ') %>
+            </div>
+          </a>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
+</div>

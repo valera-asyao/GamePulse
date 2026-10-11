@@ -1,0 +1,92 @@
+<div id="game_interaction_<%= game.id %>" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+  <% if authenticated? %>
+    <% interaction ||= current_user.interactions.find_or_initialize_by(game: game) %>
+    <%= form_with model: interaction, url: game_interaction_path(game), method: (interaction.persisted? ? :patch : :post), class: "space-y-5" do |f| %>
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+        <h3 class="font-bold text-white text-sm flex items-center gap-2">
+          <i class="fa-solid fa-gamepad text-purple-400"></i>
+          Ваш игровой опыт
+        </h3>
+        <% if interaction.persisted? %>
+          <span class="text-[10px] text-emerald-400 font-semibold px-2 py-0.5 rounded-full bg-emerald-950/60 border border-emerald-800">
+            Сохранено
+          </span>
+        <% end %>
+      </div>
+
+      <!-- Rating (1-10) -->
+      <div>
+        <label class="block text-xs font-semibold text-slate-300 mb-2">
+          Ваша оценка (1-10):
+          <span class="text-purple-400 font-bold ml-1" id="rating_val_<%= game.id %>"><%= interaction.rating || "—" %></span>
+        </label>
+        <div class="grid grid-cols-10 gap-1.5">
+          <% (1..10).each do |num| %>
+            <label class="cursor-pointer">
+              <%= f.radio_button :rating, num, class: "peer sr-only", onchange: "document.getElementById('rating_val_#{game.id}').innerText = '#{num}'" %>
+              <div class="h-9 rounded-lg flex items-center justify-center text-xs font-bold transition-all
+                          peer-checked:bg-purple-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-purple-600/40
+                          bg-slate-800 hover:bg-slate-700 text-slate-300">
+                <%= num %>
+              </div>
+            </label>
+          <% end %>
+        </div>
+      </div>
+
+      <!-- Quick Toggles: Like & Favorite -->
+      <div class="grid grid-cols-2 gap-3">
+        <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-800 hover:bg-slate-750 cursor-pointer border border-slate-700/80 transition-colors">
+          <%= f.check_box :liked, class: "rounded border-slate-600 text-purple-600 focus:ring-purple-500 bg-slate-900" %>
+          <span class="text-xs font-medium text-slate-200 flex items-center gap-1.5">
+            <i class="fa-solid fa-heart text-rose-500"></i> Нравится
+          </span>
+        </label>
+
+        <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-800 hover:bg-slate-750 cursor-pointer border border-slate-700/80 transition-colors">
+          <%= f.check_box :favorite, class: "rounded border-slate-600 text-amber-500 focus:ring-amber-500 bg-slate-900" %>
+          <span class="text-xs font-medium text-slate-200 flex items-center gap-1.5">
+            <i class="fa-solid fa-star text-amber-400"></i> В избранное
+          </span>
+        </label>
+      </div>
+
+      <!-- Status & Hours Played -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="block text-[11px] font-medium text-slate-400 mb-1">Статус прохождения</label>
+          <%= f.select :status, [
+            ["Не указано", "none"],
+            ["Хочу сыграть", "want_to_play"],
+            ["Сейчас играю", "playing"],
+            ["Пройдено", "completed"],
+            ["Заброшено", "dropped"]
+          ], {}, class: "w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-purple-500" %>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-medium text-slate-400 mb-1">Часов наиграно</label>
+          <%= f.number_field :hours_played, min: 0, placeholder: "0",
+              class: "w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-purple-500" %>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="pt-2">
+        <%= f.submit "Сохранить и обновить рекомендации", class: "w-full py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-xs shadow-lg shadow-purple-600/30 cursor-pointer transition-all" %>
+      </div>
+    <% end %>
+  <% else %>
+    <div class="text-center py-4">
+      <i class="fa-solid fa-lock text-slate-500 text-2xl mb-2"></i>
+      <h4 class="text-sm font-bold text-white">Оценить игру</h4>
+      <p class="text-xs text-slate-400 mt-1 max-w-xs mx-auto">
+        Войдите в аккаунт, чтобы поставить оценку, добавить в избранное и обучить алгоритм рекомендаций.
+      </p>
+      <div class="mt-4 flex justify-center gap-2">
+        <a href="/session/new" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-colors">Войти</a>
+        <a href="/registration/new" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-xs font-semibold text-white transition-colors">Регистрация</a>
+      </div>
+    </div>
+  <% end %>
+</div>
