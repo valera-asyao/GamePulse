@@ -1,34 +1,34 @@
-<div class="space-y-10">
+<div class="space-y-8">
 
-  <!-- Hero Banner -->
-  <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-purple-950/60 via-slate-900 to-indigo-950/60 border border-purple-900/30 p-8 sm:p-12 shadow-2xl">
-    <div class="absolute -right-16 -top-16 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute -left-16 -bottom-16 w-80 h-80 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
-
-    <div class="relative z-10 max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-900/50 border border-purple-700/50 text-purple-300 text-xs font-semibold uppercase tracking-wider mb-4">
-        <i class="fa-solid fa-sparkles text-amber-400"></i> Гибридный алгоритм 4 сигналов
+  <!-- Minimalist Hero Banner -->
+  <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-10 shadow-sm">
+    <div class="max-w-2xl space-y-4">
+      <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 text-xs font-medium">
+        <i class="fa-solid fa-shapes text-[11px]"></i> Гибридная рекомендательная система
       </div>
-      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
-        Откройте игры, которые <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400">подойдут именно вам</span>
+      <h1 class="text-2xl sm:text-4xl font-bold text-white tracking-tight leading-tight">
+        Подбор видеоигр на основе ваших предпочтений
       </h1>
-      <p class="mt-4 text-base text-slate-300 leading-relaxed">
-        Система подбирает игры по вашей истории оценок, любимым жанрам, оценкам похожих игроков и актуальности.
+      <p class="text-sm text-slate-400 leading-relaxed">
+        Сервис анализирует историю ваших оценок, вкусы похожих игроков и параметры новизны для формирования персонального топа.
       </p>
 
-      <div class="mt-6 flex flex-wrap items-center gap-4">
+      <div class="pt-2 flex flex-wrap items-center gap-3">
         <% if authenticated? %>
-          <a href="/recommendations" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-sm shadow-lg shadow-purple-600/30 transition-all">
-            <i class="fa-solid fa-wand-magic-sparkles text-amber-300"></i> Мои рекомендации
+          <a href="/recommendations" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-colors shadow-sm">
+            <i class="fa-solid fa-wand-magic-sparkles text-xs text-amber-300"></i> Мои рекомендации
           </a>
         <% else %>
-          <a href="/registration/new" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-sm shadow-lg shadow-purple-600/30 transition-all">
-            <i class="fa-solid fa-user-plus"></i> Начать подбор игр
+          <a href="/registration/new" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-colors shadow-sm">
+            <i class="fa-solid fa-user-plus text-xs"></i> Создать аккаунт
           </a>
-          <a href="/session/new" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700/80 text-slate-200 border border-slate-700 font-semibold text-sm transition-all">
-            <i class="fa-solid fa-right-to-bracket"></i> Демо вход
+          <a href="/session/new" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-750 text-slate-200 border border-slate-700 font-medium text-sm transition-colors">
+            <i class="fa-solid fa-right-to-bracket text-xs"></i> Демо вход
           </a>
         <% end %>
+        <a href="/ui_kit" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800/80 hover:bg-slate-750 text-slate-300 border border-slate-700/80 font-medium text-sm transition-colors">
+          <i class="fa-solid fa-palette text-emerald-400 text-xs"></i> UI Kit
+        </a>
       </div>
     </div>
   </div>
@@ -36,69 +36,62 @@
   <!-- Catalog Section -->
   <div class="space-y-6">
     
-    <!-- Catalog Section Header -->
+    <!-- Header -->
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       <div>
-        <h2 class="text-2xl font-bold text-white flex items-center gap-2.5">
-          <i class="fa-solid fa-shapes text-purple-400"></i>
+        <h2 class="text-xl font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-shapes text-indigo-400 text-sm"></i>
           Каталог видеоигр
         </h2>
-        <p class="text-xs text-slate-400 mt-0.5">Всего в базе: <%= Game.count %> игр</p>
+        <p class="text-xs text-slate-400 mt-0.5">В каталоге: <%= Game.count %> игр</p>
       </div>
 
       <% if @tab == 'recommended' && authenticated? %>
-        <a href="/recommendations" class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1 shrink-0">
-          Подробная статистика рекомендаций <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        <a href="/recommendations" class="text-xs font-medium text-indigo-400 hover:text-indigo-300 flex items-center gap-1 shrink-0">
+          Подробная разбивка рекомендаций <i class="fa-solid fa-arrow-right text-[10px]"></i>
         </a>
       <% end %>
     </div>
 
-    <!-- Top Catalog Navigation Tabs -->
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
-      <div class="flex items-center gap-2 overflow-x-auto scrollbar-none">
+    <!-- Navigation Tabs -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-3">
+      <div class="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
         <a href="<%= games_path(tab: 'all') %>" 
-           class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 shrink-0 <%= @tab == 'all' ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30' : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800' %>">
+           class="px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 shrink-0 <%= @tab == 'all' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-850' %>">
           <i class="fa-solid fa-shapes"></i> Все игры (<%= Game.count %>)
         </a>
 
         <a href="<%= games_path(tab: 'recommended') %>" 
-           class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 shrink-0 <%= @tab == 'recommended' ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg shadow-purple-600/30 border border-purple-400/30' : 'bg-slate-900 text-amber-300/90 hover:text-amber-200 border border-amber-500/20 hover:border-amber-500/40' %>">
-          <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Рекомендованные мне
-          <span class="px-1.5 py-0.5 rounded text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/30 font-bold">New</span>
+           class="px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 shrink-0 <%= @tab == 'recommended' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-850' %>">
+          <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Рекомендованные
         </a>
 
         <a href="<%= games_path(tab: 'all', sort: 'popular') %>" 
-           class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 shrink-0 <%= (@tab == 'all' && @sort == 'popular') ? 'bg-slate-800 text-white border border-slate-700' : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800' %>">
+           class="px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 shrink-0 <%= (@tab == 'all' && @sort == 'popular') ? 'bg-slate-800 text-white' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-850' %>">
           <i class="fa-solid fa-fire text-rose-400"></i> Популярные
         </a>
 
         <a href="<%= games_path(tab: 'all', sort: 'top_rated') %>" 
-           class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 shrink-0 <%= (@tab == 'all' && @sort == 'top_rated') ? 'bg-slate-800 text-white border border-slate-700' : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800' %>">
+           class="px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 shrink-0 <%= (@tab == 'all' && @sort == 'top_rated') ? 'bg-slate-800 text-white' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-850' %>">
           <i class="fa-solid fa-star text-amber-400"></i> Топ рейтинг
         </a>
 
         <a href="<%= games_path(tab: 'all', sort: 'recent') %>" 
-           class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 shrink-0 <%= (@tab == 'all' && @sort == 'recent') ? 'bg-slate-800 text-white border border-slate-700' : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800' %>">
+           class="px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5 shrink-0 <%= (@tab == 'all' && @sort == 'recent') ? 'bg-slate-800 text-white' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-850' %>">
           <i class="fa-solid fa-bolt text-indigo-400"></i> Свежие
         </a>
       </div>
-
-      <% if @tab == 'recommended' && authenticated? %>
-        <a href="/recommendations" class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1 shrink-0">
-          Подробная статистика рекомендаций <i class="fa-solid fa-arrow-right text-[10px]"></i>
-        </a>
-      <% end %>
     </div>
 
     <!-- Genre Filter Pills -->
-    <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+    <div class="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
       <a href="<%= games_path(tab: @tab, sort: @sort) %>" 
-         class="shrink-0 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all <%= @selected_genre.nil? ? 'bg-slate-800 text-white border border-slate-700 shadow-sm' : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800 hover:border-slate-700' %>">
+         class="shrink-0 px-2.5 py-1 rounded-md text-xs font-medium transition-colors <%= @selected_genre.nil? ? 'bg-slate-800 text-white border border-slate-700' : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800' %>">
         Все жанры
       </a>
       <% @genres.each do |genre| %>
         <a href="<%= games_path(genre: genre.slug, tab: @tab, sort: @sort) %>" 
-           class="shrink-0 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all <%= @selected_genre&.id == genre.id ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30' : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800 hover:border-slate-700' %>">
+           class="shrink-0 px-2.5 py-1 rounded-md text-xs font-medium transition-colors <%= @selected_genre&.id == genre.id ? 'bg-indigo-600 text-white border border-indigo-500' : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800' %>">
           <%= genre.name %>
         </a>
       <% end %>
@@ -106,70 +99,70 @@
 
     <!-- Content for Recommended Tab when NOT logged in -->
     <% if @tab == 'recommended' && !authenticated? %>
-      <div class="text-center py-16 bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-xl">
-        <div class="w-16 h-16 mx-auto rounded-3xl bg-purple-950/60 border border-purple-800/60 flex items-center justify-center text-purple-300 text-2xl mb-4 shadow-lg shadow-purple-900/30">
-          <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i>
+      <div class="text-center py-16 bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-sm">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-slate-800 flex items-center justify-center text-amber-400 text-xl mb-3">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
         </div>
-        <h3 class="text-xl font-bold text-white">Персональные рекомендации для вас</h3>
-        <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-lg mx-auto leading-relaxed">
-          Чтобы система подобрала игры под ваш вкус, войдите в аккаунт или выберите один из готовых тестовых профилей в один клик.
+        <h3 class="text-lg font-bold text-white">Персональные рекомендации для вас</h3>
+        <p class="text-xs text-slate-400 mt-1.5 max-w-md mx-auto leading-relaxed">
+          Чтобы система подобрала игры под ваш вкус, войдите в аккаунт или выберите один из готовых демо-профилей.
         </p>
 
-        <div class="mt-6 flex flex-wrap justify-center gap-3">
-          <a href="/session/new" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold text-xs shadow-lg shadow-purple-600/30 hover:from-purple-500 hover:to-indigo-500 transition-all">
+        <div class="mt-5 flex flex-wrap justify-center gap-2.5">
+          <a href="/session/new" class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs transition-colors shadow-sm">
             Войти или выбрать демо-профиль
           </a>
-          <a href="/registration/new" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs border border-slate-700 transition-all">
-            Зарегистрироваться
+          <a href="/registration/new" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-750 text-slate-200 font-medium text-xs border border-slate-700 transition-colors">
+            Регистрация
           </a>
         </div>
       </div>
 
-    <!-- Games Grid (Normal or Recommended) -->
+    <!-- Games Grid -->
     <% elsif @games.any? %>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         <% @games.each do |game| %>
           <% user_interaction = current_user&.interaction_for(game) %>
           <% rec = current_user&.user_recommendations&.find { |r| r.game_id == game.id } if @tab == 'recommended' %>
 
-          <div class="group bg-slate-900 border border-slate-800 hover:border-purple-500/50 rounded-2xl overflow-hidden shadow-lg transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-950/20 flex flex-col">
+          <div class="group bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl overflow-hidden shadow-sm transition-all hover:-translate-y-0.5 flex flex-col">
             
             <!-- Poster -->
-            <a href="<%= game_path(game) %>" class="relative aspect-[460/215] overflow-hidden bg-slate-950 block border-b border-slate-800/80">
+            <a href="<%= game_path(game) %>" class="relative aspect-[460/215] overflow-hidden bg-slate-950 block border-b border-slate-800">
               <img src="<%= game.image_url %>" class="absolute inset-0 w-full h-full object-cover blur-sm opacity-20 scale-110 pointer-events-none">
-              <img src="<%= game.image_url %>" alt="<%= game.title %>" class="relative z-10 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+              <img src="<%= game.image_url %>" alt="<%= game.title %>" class="relative z-10 w-full h-full object-contain group-hover:scale-102 transition-transform duration-300">
               
               <!-- Badges -->
-              <div class="absolute top-2.5 left-2.5 z-20 flex items-center gap-1.5">
-                <span class="bg-black/75 backdrop-blur-md px-2 py-0.5 rounded-lg text-xs font-bold text-amber-300 border border-amber-500/30 flex items-center gap-1">
+              <div class="absolute top-2 left-2 z-20 flex items-center gap-1.5">
+                <span class="bg-black/80 backdrop-blur-sm px-2 py-0.5 rounded text-xs font-semibold text-amber-300 border border-slate-750 flex items-center gap-1">
                   <i class="fa-solid fa-star text-[10px]"></i> <%= game.average_rating %>
                 </span>
-                <span class="bg-black/75 backdrop-blur-md px-2 py-0.5 rounded-lg text-[10px] text-slate-300 border border-slate-700">
-                  <%= game.ratings_count %> оценок
+                <span class="bg-black/80 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] text-slate-400 border border-slate-800">
+                  <%= game.ratings_count %>
                 </span>
               </div>
 
               <% if rec %>
-                <div class="absolute top-2.5 right-2.5 z-20 bg-gradient-to-r from-purple-600 to-indigo-600 px-2.5 py-0.5 rounded-lg text-xs font-extrabold text-white shadow-lg">
+                <div class="absolute top-2 right-2 z-20 bg-indigo-600 px-2 py-0.5 rounded text-xs font-bold text-white shadow-sm">
                   <%= (rec.score * 100).round %>% Match
                 </div>
               <% elsif user_interaction&.rating.present? %>
-                <div class="absolute top-2.5 right-2.5 z-20 bg-purple-600 px-2 py-0.5 rounded-lg text-xs font-bold text-white shadow">
-                  Моя: <%= user_interaction.rating %>/10
+                <div class="absolute top-2 right-2 z-20 bg-slate-800 text-indigo-300 border border-indigo-500/40 px-2 py-0.5 rounded text-xs font-semibold shadow-sm">
+                  ★ <%= user_interaction.rating %>/10
                 </div>
               <% end %>
             </a>
 
             <!-- Content -->
-            <div class="p-4 flex-1 flex flex-col justify-between">
+            <div class="p-3.5 flex-1 flex flex-col justify-between">
               <div>
-                <a href="<%= game_path(game) %>" class="font-bold text-base text-white group-hover:text-purple-400 transition-colors line-clamp-1">
+                <a href="<%= game_path(game) %>" class="font-semibold text-sm text-white group-hover:text-indigo-400 transition-colors line-clamp-1">
                   <%= game.title %>
                 </a>
                 
                 <% if rec && rec.reason.present? %>
-                  <div class="p-2 mt-2 rounded-xl bg-purple-950/40 border border-purple-800/40 text-[11px] text-purple-200 line-clamp-2">
-                    <i class="fa-solid fa-circle-info text-[9px] mr-1 text-purple-400"></i><%= rec.reason %>
+                  <div class="p-2 mt-2 rounded-lg bg-indigo-950/40 border border-indigo-800/40 text-[11px] text-indigo-200 line-clamp-2">
+                    <i class="fa-solid fa-circle-info text-[9px] mr-1 text-indigo-400"></i><%= rec.reason %>
                   </div>
                 <% else %>
                   <p class="text-xs text-slate-400 mt-1 line-clamp-2 leading-relaxed">
@@ -178,21 +171,19 @@
                 <% end %>
 
                 <!-- Genres -->
-                <div class="flex flex-wrap gap-1.5 mt-3">
+                <div class="flex flex-wrap gap-1 mt-2.5">
                   <% game.genres.first(3).each do |g| %>
-                    <span class="px-2 py-0.5 rounded-md bg-slate-800 text-[10px] font-medium text-slate-300">
+                    <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] font-medium text-slate-400">
                       <%= g.name %>
                     </span>
                   <% end %>
                 </div>
               </div>
 
-              <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                <span class="text-slate-400">
-                  <%= game.release_date&.year || "—" %>
-                </span>
-                <a href="<%= game_path(game) %>" class="text-purple-400 group-hover:text-purple-300 font-semibold flex items-center gap-1">
-                  Подробнее <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              <div class="mt-3 pt-2.5 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                <span><%= game.release_date&.year || "—" %></span>
+                <a href="<%= game_path(game) %>" class="text-indigo-400 group-hover:text-indigo-300 font-medium flex items-center gap-1">
+                  Подробнее <i class="fa-solid fa-chevron-right text-[9px]"></i>
                 </a>
               </div>
             </div>
@@ -202,16 +193,18 @@
       </div>
     <% else %>
       <div class="text-center py-16 bg-slate-900 border border-slate-800 rounded-2xl p-8">
-        <i class="fa-solid fa-ghost text-4xl text-slate-600 mb-3"></i>
-        <h3 class="text-lg font-bold text-white">Игры не найдены</h3>
+        <i class="fa-solid fa-ghost text-3xl text-slate-600 mb-3"></i>
+        <h3 class="text-base font-bold text-white">Игры не найдены</h3>
         <p class="text-xs text-slate-400 mt-1">
           <% if @tab == 'recommended' %>
-            Вы еще не оценили достаточно игр. Оцените пару игр в каталоге, чтобы получить подборку!
+            Вы еще не оценили достаточно игр. Оцените пару игр в каталоге для получения персонального топа.
           <% else %>
-            Попробуйте изменить запрос поиска или выбранный жанр
+            Попробуйте изменить поисковый запрос или фильтр по жанру.
           <% end %>
         </p>
-        <a href="<%= games_path(tab: 'all') %>" class="mt-4 inline-block px-4 py-2 rounded-xl bg-purple-600 text-xs font-semibold text-white">Перейти ко всем играм</a>
+        <a href="<%= games_path(tab: 'all') %>" class="mt-4 inline-block px-3.5 py-1.5 rounded-lg bg-indigo-600 text-xs font-medium text-white hover:bg-indigo-500 transition-colors">
+          Ко всем играм
+        </a>
       </div>
     <% end %>
 

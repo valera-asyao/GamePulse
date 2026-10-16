@@ -14,5 +14,7 @@ Rails.application.routes.draw do
     resource :interaction, only: %i[create update destroy]
   end
 
+  get "ui_kit" => "ui_kit#index"
+
   get "up" => "rails/health#show", as: :rails_health_check
 end

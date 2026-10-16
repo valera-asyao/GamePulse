@@ -1,20 +1,20 @@
 <div class="max-w-md mx-auto my-6">
-  <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl">
+  <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
     <div class="text-center mb-6">
-      <div class="w-12 h-12 mx-auto rounded-2xl bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center text-white text-xl shadow-lg shadow-purple-500/30 mb-3">
+      <div class="w-10 h-10 mx-auto rounded-xl bg-indigo-600 flex items-center justify-center text-white text-base shadow-sm mb-3">
         <i class="fa-solid fa-user-plus"></i>
       </div>
-      <h1 class="text-2xl font-bold text-white tracking-tight">Создать аккаунт</h1>
-      <p class="text-xs text-slate-400 mt-1">Присоединяйтесь, чтобы получать умные рекомендации игр</p>
+      <h1 class="text-xl font-bold text-white tracking-tight">Создать аккаунт</h1>
+      <p class="text-xs text-slate-400 mt-1">Присоединяйтесь для получения умных рекомендаций</p>
     </div>
 
     <% if @user.errors.any? %>
-      <div class="mb-6 p-4 rounded-xl bg-rose-950/70 border border-rose-800/60 text-rose-200 text-xs">
-        <div class="font-semibold mb-1 flex items-center gap-1.5">
+      <div class="mb-5 p-3.5 rounded-lg bg-rose-950/70 border border-rose-800/60 text-rose-200 text-xs">
+        <div class="font-medium mb-1 flex items-center gap-1.5">
           <i class="fa-solid fa-circle-exclamation"></i>
-          Ошибки при регистрации:
+          Ошибки при заполнении:
         </div>
-        <ul class="list-disc list-inside space-y-0.5">
+        <ul class="list-disc list-inside space-y-0.5 text-slate-300">
           <% @user.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
           <% end %>
@@ -22,51 +22,53 @@
       </div>
     <% end %>
 
-    <%= form_with model: @user, url: registration_path, method: :post, class: "space-y-4" do |f| %>
+    <%= form_with model: @user, url: registration_path, method: :post, class: "space-y-3.5" do |f| %>
       <div>
         <label class="block text-xs font-medium text-slate-300 mb-1">Email <span class="text-rose-400">*</span></label>
         <%= f.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "gamer@example.com",
-            class: "w-full bg-slate-800 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" %>
+            class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" %>
       </div>
 
       <div>
         <label class="block text-xs font-medium text-slate-300 mb-1">Никнейм (username) <span class="text-rose-400">*</span></label>
         <%= f.text_field :username, required: true, placeholder: "cyber_hero",
-            class: "w-full bg-slate-800 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" %>
+            class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" %>
       </div>
 
       <div>
-        <label class="block text-xs font-medium text-slate-300 mb-1">Отображаемое имя (необязательно)</label>
+        <label class="block text-xs font-medium text-slate-300 mb-1">Отображаемое имя</label>
         <%= f.text_field :name, placeholder: "Алексей Иванов",
-            class: "w-full bg-slate-800 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" %>
+            class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" %>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="block text-xs font-medium text-slate-300 mb-1">Пароль <span class="text-rose-400">*</span></label>
+          <%= f.password_field :password, required: true, autocomplete: "new-password", placeholder: "••••••••",
+              class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" %>
+        </div>
+
+        <div>
+          <label class="block text-xs font-medium text-slate-300 mb-1">Повтор пароля <span class="text-rose-400">*</span></label>
+          <%= f.password_field :password_confirmation, required: true, autocomplete: "new-password", placeholder: "••••••••",
+              class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" %>
+        </div>
       </div>
 
       <div>
-        <label class="block text-xs font-medium text-slate-300 mb-1">Пароль (минимум 6 символов) <span class="text-rose-400">*</span></label>
-        <%= f.password_field :password, required: true, autocomplete: "new-password", placeholder: "••••••••",
-            class: "w-full bg-slate-800 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" %>
+        <label class="block text-xs font-medium text-slate-300 mb-1">О себе</label>
+        <%= f.text_area :bio, rows: 2, placeholder: "Фанат RPG и пошаговых стратегий...",
+            class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-1.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" %>
       </div>
 
-      <div>
-        <label class="block text-xs font-medium text-slate-300 mb-1">Подтверждение пароля <span class="text-rose-400">*</span></label>
-        <%= f.password_field :password_confirmation, required: true, autocomplete: "new-password", placeholder: "••••••••",
-            class: "w-full bg-slate-800 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" %>
-      </div>
-
-      <div>
-        <label class="block text-xs font-medium text-slate-300 mb-1">О себе / Любимые жанры</label>
-        <%= f.text_area :bio, rows: 2, placeholder: "Фанат RPG и стратегий...",
-            class: "w-full bg-slate-800 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" %>
-      </div>
-
-      <div class="pt-2">
-        <%= f.submit "Зарегистрироваться", class: "w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-sm shadow-lg shadow-purple-600/30 cursor-pointer transition-all" %>
+      <div class="pt-1.5">
+        <%= f.submit "Зарегистрироваться", class: "w-full py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-colors cursor-pointer shadow-sm" %>
       </div>
     <% end %>
 
-    <div class="mt-6 pt-6 border-t border-slate-800 text-center text-xs text-slate-400">
+    <div class="mt-5 pt-4 border-t border-slate-800 text-center text-xs text-slate-400">
       Уже есть аккаунт?
-      <a href="/session/new" class="text-purple-400 hover:text-purple-300 font-medium ml-1">Войти</a>
+      <a href="/session/new" class="text-indigo-400 hover:text-indigo-300 font-medium ml-1">Войти</a>
     </div>
   </div>
 </div>
