@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_10_08_075351) do
+ActiveRecord::Schema[8.1].define(version: 2026_10_30_134456) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -75,6 +75,8 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_08_075351) do
     t.float "popularity_score", default: 0.0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "steam_rating"
+    t.integer "steam_reviews_count"
     t.index ["average_rating"], name: "index_games_on_average_rating"
     t.index ["popularity_score"], name: "index_games_on_popularity_score"
     t.index ["slug"], name: "index_games_on_slug", unique: true

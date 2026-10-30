@@ -20,11 +20,32 @@ class Game < ApplicationRecord
     slug
   end
 
+  def steam_percentage
+    return nil unless steam_rating.present?
+    (steam_rating * 10).round.clamp(0, 100)
+  end
+
+  def formatted_reviews_count
+    cnt = (ratings_count || steam_reviews_count).to_i
+    if cnt >= 1_000_000
+      "#{(cnt / 1_000_000.0).round(1)}M"
+    elsif cnt >= 1_000
+      "#{(cnt / 1_000.0).round(0)}K"
+    else
+      cnt.to_s
+    end
+  end
+
   def update_metrics!
     valid_ratings = interactions.where.not(rating: nil).pluck(:rating)
     count = valid_ratings.size
-    avg = count > 0 ? (valid_ratings.sum.to_f / count).round(1) : 0.0
+    avg = if count > 0
+            (valid_ratings.sum.to_f / count).round(1)
+          else
+            steam_rating.to_f > 0 ? steam_rating.round(1) : 0.0
+          end
 
+    display_count = count > 0 ? count : (steam_reviews_count.to_i)
     likes_count = interactions.where(liked: true).count
     favorites_count = interactions.where(favorite: true).count
 
@@ -33,7 +54,7 @@ class Game < ApplicationRecord
 
     update_columns(
       average_rating: avg,
-      ratings_count: count,
+      ratings_count: display_count,
       popularity_score: pop.round(2)
     )
   end
