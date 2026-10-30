@@ -1,0 +1,3984 @@
+[
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "slug": "the-witcher-3-wild-hunt",
+    "developer": "CD Projekt RED",
+    "publisher": "CD Projekt",
+    "release_date": "2015-05-19",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg",
+    "genres": [
+      "rpg",
+      "open-world",
+      "action"
+    ],
+    "tags": [
+      "фэнтези",
+      "сюжет",
+      "исследование"
+    ],
+    "description": "Культовая сюжетная ролевая игра о ведьмаке Геральте в мрачном фэнтезийном открытом мире."
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "slug": "cyberpunk-2077",
+    "developer": "CD Projekt RED",
+    "publisher": "CD Projekt",
+    "release_date": "2020-12-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg",
+    "genres": [
+      "rpg",
+      "open-world",
+      "shooter"
+    ],
+    "tags": [
+      "киберпанк",
+      "сюжет",
+      "научная-фантастика"
+    ],
+    "description": "Приключенческая ролевая игра в открытом мире Найт-Сити, где модификации тела ценятся превыше всего."
+  },
+  {
+    "title": "Baldur's Gate 3",
+    "slug": "baldurs-gate-3",
+    "developer": "Larian Studios",
+    "publisher": "Larian Studios",
+    "release_date": "2023-08-03",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg",
+    "genres": [
+      "rpg",
+      "strategy"
+    ],
+    "tags": [
+      "фэнтези",
+      "сюжет",
+      "сложная",
+      "кооператив"
+    ],
+    "description": "Грандиозная партийная RPG по правилам D&D с беспрецедентной свободой выбора и вариативностью."
+  },
+  {
+    "title": "Elden Ring",
+    "slug": "elden-ring",
+    "developer": "FromSoftware",
+    "publisher": "Bandai Namco",
+    "release_date": "2022-02-25",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg",
+    "genres": [
+      "rpg",
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "фэнтези",
+      "сложная",
+      "исследование",
+      "соулслайк"
+    ],
+    "description": "Хардкорный ролевой боевик в таинственном Междуземье, созданном Хидэтакой Миядзаки."
+  },
+  {
+    "title": "Dark Souls III",
+    "slug": "dark-souls-iii",
+    "developer": "FromSoftware",
+    "publisher": "Bandai Namco",
+    "release_date": "2016-04-11",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/374320/header.jpg",
+    "genres": [
+      "rpg",
+      "action"
+    ],
+    "tags": [
+      "сложная",
+      "фэнтези",
+      "соулслайк",
+      "атмосферная"
+    ],
+    "description": "Завершающая глава легендарной трилогии темного фэнтези с филигранно выверенными дуэлями."
+  },
+  {
+    "title": "Dark Souls Remastered",
+    "slug": "dark-souls-remastered",
+    "developer": "FromSoftware",
+    "publisher": "Bandai Namco",
+    "release_date": "2018-05-24",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/570940/header.jpg",
+    "genres": [
+      "rpg",
+      "action"
+    ],
+    "tags": [
+      "сложная",
+      "фэнтези",
+      "соулслайк",
+      "ретро"
+    ],
+    "description": "Переиздание шедевра, заложившего основы жанра soulslike в полуразрушенном Лордране."
+  },
+  {
+    "title": "Sekiro: Shadows Die Twice",
+    "slug": "sekiro-shadows-die-twice",
+    "developer": "FromSoftware",
+    "publisher": "Activision",
+    "release_date": "2019-03-22",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/814380/header.jpg",
+    "genres": [
+      "action",
+      "rpg"
+    ],
+    "tags": [
+      "сложная",
+      "соулслайк",
+      "сюжет",
+      "стелс"
+    ],
+    "description": "Бескомпромиссный боевик об одноруком синоби в феодальной Японии с филигранной дуэльной системой парирования."
+  },
+  {
+    "title": "Lies of P",
+    "slug": "lies-of-p",
+    "developer": "NEOWIZ",
+    "publisher": "NEOWIZ",
+    "release_date": "2023-09-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1627720/header.jpg",
+    "genres": [
+      "rpg",
+      "action"
+    ],
+    "tags": [
+      "соулслайк",
+      "сложная",
+      "атмосфера",
+      "сюжет"
+    ],
+    "description": "Мрачный соулслайк по мотивам сказки о Пиноккио в охваченном безумием городе эпохи Прекрасной эпохи."
+  },
+  {
+    "title": "The Elder Scrolls V: Skyrim",
+    "slug": "the-elder-scrolls-v-skyrim",
+    "developer": "Bethesda Game Studios",
+    "publisher": "Bethesda Softworks",
+    "release_date": "2016-10-28",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg",
+    "genres": [
+      "rpg",
+      "open-world",
+      "action"
+    ],
+    "tags": [
+      "фэнтези",
+      "исследование",
+      "сюжет",
+      "песочница"
+    ],
+    "description": "Эпическое ролевое приключение Довакина в снежной провинции Скайрим с безграничной свободой выбора."
+  },
+  {
+    "title": "Fallout 4",
+    "slug": "fallout-4",
+    "developer": "Bethesda Game Studios",
+    "publisher": "Bethesda Softworks",
+    "release_date": "2015-11-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/377160/header.jpg",
+    "genres": [
+      "rpg",
+      "open-world",
+      "shooter"
+    ],
+    "tags": [
+      "исследование",
+      "крафтинг",
+      "атмосфера",
+      "сюжет"
+    ],
+    "description": "Постапокалиптическая ролевая игра о выжившем из Убежища 111 в Пустошах Бостона."
+  },
+  {
+    "title": "Fallout: New Vegas",
+    "slug": "fallout-new-vegas",
+    "developer": "Obsidian Entertainment",
+    "publisher": "Bethesda Softworks",
+    "release_date": "2010-10-19",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/22380/header.jpg",
+    "genres": [
+      "rpg",
+      "open-world",
+      "shooter"
+    ],
+    "tags": [
+      "сюжет",
+      "исследование",
+      "атмосфера",
+      "ретро"
+    ],
+    "description": "Эталонная нелинейная ролевая игра в радиоактивной пустыне Мохаве с войной трех фракций."
+  },
+  {
+    "title": "Mass Effect Legendary Edition",
+    "slug": "mass-effect-legendary-edition",
+    "developer": "BioWare",
+    "publisher": "Electronic Arts",
+    "release_date": "2021-05-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1328670/header.jpg",
+    "genres": [
+      "rpg",
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "научная-фантастика",
+      "сюжет",
+      "исследование"
+    ],
+    "description": "Великая космическая сага о капитане Шепарде и борьбе со Жнецами за выживание всей галактики."
+  },
+  {
+    "title": "Persona 5 Royal",
+    "slug": "persona-5-royal",
+    "developer": "ATLUS",
+    "publisher": "SEGA",
+    "release_date": "2022-10-21",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1687950/header.jpg",
+    "genres": [
+      "rpg",
+      "strategy"
+    ],
+    "tags": [
+      "пошаговая",
+      "сюжет",
+      "атмосфера"
+    ],
+    "description": "Стильная японская RPG о Призрачных Похитителях Сердец, меняющих сердца негодяев в Токио."
+  },
+  {
+    "title": "Persona 4 Golden",
+    "slug": "persona-4-golden",
+    "developer": "ATLUS",
+    "publisher": "SEGA",
+    "release_date": "2020-06-13",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1113000/header.jpg",
+    "genres": [
+      "rpg",
+      "strategy"
+    ],
+    "tags": [
+      "пошаговая",
+      "сюжет",
+      "уютная"
+    ],
+    "description": "Детективная ролевая история школьников в тихом туманном городке Инаба с расследованием мистических убийств."
+  },
+  {
+    "title": "Persona 3 Reload",
+    "slug": "persona-3-reload",
+    "developer": "ATLUS",
+    "publisher": "SEGA",
+    "release_date": "2024-02-02",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2161700/header.jpg",
+    "genres": [
+      "rpg",
+      "strategy"
+    ],
+    "tags": [
+      "пошаговая",
+      "сюжет",
+      "стильная"
+    ],
+    "description": "Масштабный ремейк культовой JRPG с исследованием башни Тартар и Темного Часа."
+  },
+  {
+    "title": "Dragon's Dogma 2",
+    "slug": "dragons-dogma-2",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "release_date": "2024-03-22",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2054970/header.jpg",
+    "genres": [
+      "rpg",
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "фэнтези",
+      "исследование",
+      "сложная"
+    ],
+    "description": "Захватывающее фэнтезийное приключение Восставшего с умными напарниками-пешками и динамичной физикой монстров."
+  },
+  {
+    "title": "Monster Hunter: World",
+    "slug": "monster-hunter-world",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "release_date": "2018-08-09",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/582010/header.jpg",
+    "genres": [
+      "action",
+      "rpg"
+    ],
+    "tags": [
+      "кооператив",
+      "охота",
+      "крафтинг",
+      "мультиплеер"
+    ],
+    "description": "Охота на величественных чудовищ в живой экосистеме Нового Света с глубоким крафтом экипировки."
+  },
+  {
+    "title": "Monster Hunter Rise",
+    "slug": "monster-hunter-rise",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "release_date": "2022-01-12",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1446780/header.jpg",
+    "genres": [
+      "action",
+      "rpg"
+    ],
+    "tags": [
+      "кооператив",
+      "охота",
+      "экшен"
+    ],
+    "description": "Стремительная охота на монстров в японском антураже деревни Камура с механикой прутожуков."
+  },
+  {
+    "title": "NieR:Automata",
+    "slug": "nier-automata",
+    "developer": "Square Enix",
+    "publisher": "Square Enix",
+    "release_date": "2017-03-17",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/524220/header.jpg",
+    "genres": [
+      "rpg",
+      "action"
+    ],
+    "tags": [
+      "научная-фантастика",
+      "сюжет",
+      "атмосфера"
+    ],
+    "description": "Философский шедевр о противостоянии андроидов 2B и 9S инопланетным механическим машинам на Земле."
+  },
+  {
+    "title": "Disco Elysium - The Final Cut",
+    "slug": "disco-elysium",
+    "developer": "ZA/UM",
+    "publisher": "ZA/UM",
+    "release_date": "2019-10-15",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/632470/header.jpg",
+    "genres": [
+      "rpg",
+      "indie"
+    ],
+    "tags": [
+      "сюжет",
+      "детектив",
+      "атмосфера"
+    ],
+    "description": "Новаторская изометрическая детективная RPG о сыщике-алкоголике в Ревашоле с уникальной системой навыков."
+  },
+  {
+    "title": "Divinity: Original Sin 2",
+    "slug": "divinity-original-sin-2",
+    "developer": "Larian Studios",
+    "publisher": "Larian Studios",
+    "release_date": "2017-09-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/435150/header.jpg",
+    "genres": [
+      "rpg",
+      "strategy"
+    ],
+    "tags": [
+      "пошаговая",
+      "фэнтези",
+      "кооператив",
+      "сюжет"
+    ],
+    "description": "Глубокая тактическая RPG в мире Ривеллона с физическими взаимодействиями стихий и кооперативом."
+  },
+  {
+    "title": "Kingdom Come: Deliverance",
+    "slug": "kingdom-come-deliverance",
+    "developer": "Warhorse Studios",
+    "publisher": "Warhorse Studios",
+    "release_date": "2018-02-13",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/379430/header.jpg",
+    "genres": [
+      "rpg",
+      "open-world",
+      "action"
+    ],
+    "tags": [
+      "реализм",
+      "средневековье",
+      "сюжет",
+      "исследование"
+    ],
+    "description": "Историческая ролевая игра от первого лица о сыне кузнеца Индржихе в Богемии XV века без магии."
+  },
+  {
+    "title": "Black Myth: Wukong",
+    "slug": "black-myth-wukong",
+    "developer": "Game Science",
+    "publisher": "Game Science",
+    "release_date": "2024-08-20",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg",
+    "genres": [
+      "action",
+      "rpg"
+    ],
+    "tags": [
+      "фэнтези",
+      "сложная",
+      "атмосфера",
+      "мифология"
+    ],
+    "description": "Зрелищный экшен-боевик по китайской мифологии о путешествии Избранного по следам Царя Обезьян."
+  },
+  {
+    "title": "Final Fantasy VII Remake Intergrade",
+    "slug": "final-fantasy-vii-remake-intergrade",
+    "developer": "Square Enix",
+    "publisher": "Square Enix",
+    "release_date": "2022-06-17",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1462040/header.jpg",
+    "genres": [
+      "rpg",
+      "action"
+    ],
+    "tags": [
+      "сюжет",
+      "киберпанк",
+      "фэнтези"
+    ],
+    "description": "Возрождение легендарной истории Клауда Страйфа и группы ЛАВИНА в мегаполисе Мидгар."
+  },
+  {
+    "title": "Yakuza: Like a Dragon",
+    "slug": "yakuza-like-a-dragon",
+    "developer": "Ryu Ga Gotoku Studio",
+    "publisher": "SEGA",
+    "release_date": "2020-11-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1235140/header.jpg",
+    "genres": [
+      "rpg",
+      "action"
+    ],
+    "tags": [
+      "пошаговая",
+      "сюжет",
+      "юмор",
+      "открытый-мир"
+    ],
+    "description": "Пошаговая ролевая сага об обаятельном якудзе Ичибане Касуге на улицах Иокогамы."
+  },
+  {
+    "title": "Starfield",
+    "slug": "starfield",
+    "developer": "Bethesda Game Studios",
+    "publisher": "Bethesda Softworks",
+    "release_date": "2023-09-06",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1716740/header.jpg",
+    "genres": [
+      "rpg",
+      "open-world",
+      "shooter"
+    ],
+    "tags": [
+      "космос",
+      "научная-фантастика",
+      "исследование"
+    ],
+    "description": "Космическая ролевая игра нового поколения об исследовании тысячи далеких планет созвездия."
+  },
+  {
+    "title": "Grand Theft Auto V",
+    "slug": "grand-theft-auto-v",
+    "developer": "Rockstar North",
+    "publisher": "Rockstar Games",
+    "release_date": "2015-04-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "мультиплеер",
+      "песочница",
+      "сюжет"
+    ],
+    "description": "Культовый криминальный боевик об ограблениях в гигантском штате Сан-Андреас от лица трех героев."
+  },
+  {
+    "title": "Red Dead Redemption 2",
+    "slug": "red-dead-redemption-2",
+    "developer": "Rockstar Games",
+    "publisher": "Rockstar Games",
+    "release_date": "2019-12-05",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "сюжет",
+      "атмосфера",
+      "реализм",
+      "исследование"
+    ],
+    "description": "Глубокая и кинематографичная драма об Артуре Моргане и банде Датча на закате эпохи Дикого Запада."
+  },
+  {
+    "title": "God of War",
+    "slug": "god-of-war",
+    "developer": "Santa Monica Studio",
+    "publisher": "PlayStation Publishing",
+    "release_date": "2022-01-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg",
+    "genres": [
+      "action",
+      "adventure"
+    ],
+    "tags": [
+      "мифология",
+      "сюжет",
+      "экшен",
+      "атмосфера"
+    ],
+    "description": "Эпическое скандинавское приключение постаревшего спартанца Кратоса и его сына Атрея."
+  },
+  {
+    "title": "Marvel's Spider-Man Remastered",
+    "slug": "marvels-spider-man-remastered",
+    "developer": "Insomniac Games",
+    "publisher": "PlayStation Publishing",
+    "release_date": "2022-08-12",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "супергерои",
+      "экшен",
+      "сюжет"
+    ],
+    "description": "Полеты на паутине по сияющему Манхэттену и динамичные битвы Питера Паркера со злодеями."
+  },
+  {
+    "title": "Ghost of Tsushima DIRECTOR'S CUT",
+    "slug": "ghost-of-tsushima",
+    "developer": "Sucker Punch",
+    "publisher": "PlayStation Publishing",
+    "release_date": "2024-05-16",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "самураи",
+      "атмосфера",
+      "открытый-мир",
+      "сюжет"
+    ],
+    "description": "Живописная история Дзина Сакая, вставшего на путь Призрака ради освобождения острова Цусима."
+  },
+  {
+    "title": "Horizon Zero Dawn",
+    "slug": "horizon-zero-dawn",
+    "developer": "Guerrilla",
+    "publisher": "PlayStation Publishing",
+    "release_date": "2020-08-07",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1151640/header.jpg",
+    "genres": [
+      "action",
+      "open-world",
+      "rpg"
+    ],
+    "tags": [
+      "роботы",
+      "научная-фантастика",
+      "исследование"
+    ],
+    "description": "Охота на механических зверей в постапокалиптическом мире первобытных племен вместе с охотницей Элой."
+  },
+  {
+    "title": "Days Gone",
+    "slug": "days-gone",
+    "developer": "Bend Studio",
+    "publisher": "PlayStation Publishing",
+    "release_date": "2021-05-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1259420/header.jpg",
+    "genres": [
+      "action",
+      "open-world",
+      "survival"
+    ],
+    "tags": [
+      "зомби",
+      "постапокалипсис",
+      "мотоцикл",
+      "сюжет"
+    ],
+    "description": "Выживание байкера Дикона Сент-Джона среди бескрайних лесов Орегона и гигантских орд фриков."
+  },
+  {
+    "title": "Death Stranding Director's Cut",
+    "slug": "death-stranding",
+    "developer": "KOJIMA PRODUCTIONS",
+    "publisher": "505 Games",
+    "release_date": "2022-03-30",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1850570/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "научная-фантастика",
+      "атмосфера",
+      "сюжет",
+      "исследование"
+    ],
+    "description": "Уникальное медитативное путешествие Сэма Бриджеса по объединению расколотой Америки Хидэо Кодзимы."
+  },
+  {
+    "title": "Batman: Arkham Knight",
+    "slug": "batman-arkham-knight",
+    "developer": "Rocksteady Studios",
+    "publisher": "Warner Bros.",
+    "release_date": "2015-06-23",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/208650/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "супергерои",
+      "стелс",
+      "экшен",
+      "сюжет"
+    ],
+    "description": "Финал трилогии о Темном Рыцаре с боевым Бэтмобилем и защитой Готэма от Пугала."
+  },
+  {
+    "title": "Batman: Arkham City",
+    "slug": "batman-arkham-city",
+    "developer": "Rocksteady Studios",
+    "publisher": "Warner Bros.",
+    "release_date": "2012-09-07",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/200260/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "супергерои",
+      "сюжет",
+      "стелс"
+    ],
+    "description": "Золотой стандарт супергеройских экшенов в изолированном криминальном мегаполисе."
+  },
+  {
+    "title": "Assassin's Creed Odyssey",
+    "slug": "assassins-creed-odyssey",
+    "developer": "Ubisoft",
+    "publisher": "Ubisoft",
+    "release_date": "2018-10-05",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/812140/header.jpg",
+    "genres": [
+      "rpg",
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "история",
+      "греция",
+      "исследование",
+      "открытый-мир"
+    ],
+    "description": "Грандиозная древнегреческая одиссея спартанского наемника во времена Пелопоннесской войны."
+  },
+  {
+    "title": "Control Ultimate Edition",
+    "slug": "control-ultimate-edition",
+    "developer": "Remedy Entertainment",
+    "publisher": "505 Games",
+    "release_date": "2020-08-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/870780/header.jpg",
+    "genres": [
+      "action",
+      "adventure"
+    ],
+    "tags": [
+      "мистика",
+      "научная-фантастика",
+      "сюжет",
+      "разрушение"
+    ],
+    "description": "Сюрреалистичный триллер о Федеральном Бюро Контроля и телекинетических способностях Джесси Фейден."
+  },
+  {
+    "title": "Dishonored",
+    "slug": "dishonored",
+    "developer": "Arkane Studios",
+    "publisher": "Bethesda Softworks",
+    "release_date": "2012-10-12",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/205100/header.jpg",
+    "genres": [
+      "action",
+      "adventure"
+    ],
+    "tags": [
+      "стелс",
+      "магия",
+      "стимпанк",
+      "сюжет"
+    ],
+    "description": "Эталонный иммерсивный стелс-экшен о лорде-защитнике Корво Аттано в охваченном чумой Дануолле."
+  },
+  {
+    "title": "Dishonored 2",
+    "slug": "dishonored-2",
+    "developer": "Arkane Studios",
+    "publisher": "Bethesda Softworks",
+    "release_date": "2016-11-11",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/403640/header.jpg",
+    "genres": [
+      "action",
+      "adventure"
+    ],
+    "tags": [
+      "стелс",
+      "магия",
+      "вариативность",
+      "дизайн"
+    ],
+    "description": "Продолжение истории Эмили и Корво в залитом солнцем приморском городе Карнака."
+  },
+  {
+    "title": "Prey",
+    "slug": "prey",
+    "developer": "Arkane Studios",
+    "publisher": "Bethesda Softworks",
+    "release_date": "2017-05-05",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/474960/header.jpg",
+    "genres": [
+      "action",
+      "shooter",
+      "rpg"
+    ],
+    "tags": [
+      "научная-фантастика",
+      "космос",
+      "атмосфера",
+      "исследование"
+    ],
+    "description": "Иммерсивный научно-фантастический шедевр на борту захваченной мимиками орбитальной станции Талос-1."
+  },
+  {
+    "title": "Hitman World of Assassination",
+    "slug": "hitman-world-of-assassination",
+    "developer": "IO Interactive",
+    "publisher": "IO Interactive",
+    "release_date": "2022-01-20",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1659040/header.jpg",
+    "genres": [
+      "action",
+      "stealth"
+    ],
+    "tags": [
+      "стелс",
+      "песочница",
+      "тактика",
+      "головоломка"
+    ],
+    "description": "Полная коллекция контрактов Агента 47 с непревзойденной свободой устранения целей по всему миру."
+  },
+  {
+    "title": "Counter-Strike 2",
+    "slug": "counter-strike-2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release_date": "2023-09-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "мультиплеер",
+      "тактика",
+      "соревновательная"
+    ],
+    "description": "Главный соревновательный тактический шутер планеты на движке Source 2 с динамическим дымом."
+  },
+  {
+    "title": "Apex Legends",
+    "slug": "apex-legends",
+    "developer": "Respawn Entertainment",
+    "publisher": "Electronic Arts",
+    "release_date": "2020-11-05",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1172470/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "королевская-битва",
+      "мультиплеер",
+      "динамика"
+    ],
+    "description": "Быстрая королевская битва с уникальными легендами, паркуром и командным взаимодействием."
+  },
+  {
+    "title": "Team Fortress 2",
+    "slug": "team-fortress-2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release_date": "2007-10-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/440/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "мультиплеер",
+      "юмор",
+      "ретро",
+      "командная"
+    ],
+    "description": "Легендарный командный шутер от Valve с 9 неповторимыми классами и тоннами кастомизации."
+  },
+  {
+    "title": "DOOM Eternal",
+    "slug": "doom-eternal",
+    "developer": "id Software",
+    "publisher": "Bethesda Softworks",
+    "release_date": "2020-03-20",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/782330/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "сложная",
+      "динамика",
+      "мясо",
+      "метал"
+    ],
+    "description": "Яростный и молниеносный шутер о Палаче Рока, уничтожающем полчища ада под тяжелый метал."
+  },
+  {
+    "title": "DOOM",
+    "slug": "doom-2016",
+    "developer": "id Software",
+    "publisher": "Bethesda Softworks",
+    "release_date": "2016-05-13",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/379720/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "динамика",
+      "мясо",
+      "метал",
+      "демоны"
+    ],
+    "description": "Триумфальное возрождение классического брутального шутера на марсианской станции ОАК."
+  },
+  {
+    "title": "Half-Life 2",
+    "slug": "half-life-2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release_date": "2004-11-16",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/220/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "сюжет",
+      "физика",
+      "классика",
+      "научная-фантастика"
+    ],
+    "description": "Эпохальный шедевр игровой индустрии о борьбе Гордона Фримена с Альянсом в Сити-17."
+  },
+  {
+    "title": "Left 4 Dead 2",
+    "slug": "left-4-dead-2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release_date": "2009-11-17",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/550/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "кооператив",
+      "зомби",
+      "мультиплеер",
+      "выживание"
+    ],
+    "description": "Эталон кооперативных зомби-шутеров для четырех игроков с непредсказуемым ИИ-режиссером."
+  },
+  {
+    "title": "Metro Exodus",
+    "slug": "metro-exodus",
+    "developer": "4A Games",
+    "publisher": "Deep Silver",
+    "release_date": "2019-02-15",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/412020/header.jpg",
+    "genres": [
+      "shooter",
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "постапокалипсис",
+      "атмосфера",
+      "сюжет",
+      "выживание"
+    ],
+    "description": "Путешествие Артема и экипажа поезда Аврора через постапокалиптическую Россию в поисках жизни."
+  },
+  {
+    "title": "Bioshock Infinite",
+    "slug": "bioshock-infinite",
+    "developer": "Irrational Games",
+    "publisher": "2K",
+    "release_date": "2013-03-25",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/8870/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "сюжет",
+      "стимпанк",
+      "атмосфера"
+    ],
+    "description": "Головокружительное приключение Букера Девитта и Элизабет в парящем летающем городе Колумбия."
+  },
+  {
+    "title": "Titanfall 2",
+    "slug": "titanfall-2",
+    "developer": "Respawn Entertainment",
+    "publisher": "Electronic Arts",
+    "release_date": "2020-06-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1237970/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "роботы",
+      "паркур",
+      "сюжет",
+      "научная-фантастика"
+    ],
+    "description": "Один из лучших сюжетных шутеров с бегом по стенам и душевной связью пилота и титана BT-7274."
+  },
+  {
+    "title": "Deep Rock Galactic",
+    "slug": "deep-rock-galactic",
+    "developer": "Ghost Ship Games",
+    "publisher": "Coffee Stain",
+    "release_date": "2020-05-13",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/548430/header.jpg",
+    "genres": [
+      "shooter",
+      "indie",
+      "action"
+    ],
+    "tags": [
+      "кооператив",
+      "процедурная",
+      "космос",
+      "юмор"
+    ],
+    "description": "Командная добыча минералов боевыми космическими гномами в процедурно разрушаемых пещерах."
+  },
+  {
+    "title": "Helldivers 2",
+    "slug": "helldivers-2",
+    "developer": "Arrowhead Game Studios",
+    "publisher": "PlayStation Publishing",
+    "release_date": "2024-02-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/553850/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "кооператив",
+      "мультиплеер",
+      "космос",
+      "сатира"
+    ],
+    "description": "Безумный кооперативный шутер о несении Управляемой Демократии жукам-терминидам и автоматонам."
+  },
+  {
+    "title": "Warhammer 40,000: Space Marine 2",
+    "slug": "space-marine-2",
+    "developer": "Saber Interactive",
+    "publisher": "Focus Entertainment",
+    "release_date": "2024-09-09",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2183900/header.jpg",
+    "genres": [
+      "action",
+      "shooter"
+    ],
+    "tags": [
+      "кооператив",
+      "вархаммер",
+      "брутальность"
+    ],
+    "description": "Ураганная бойня лейтенанта Тита против бесконечных орд тиранидов во имя Императора."
+  },
+  {
+    "title": "ULTRAKILL",
+    "slug": "ultrakill",
+    "developer": "Arsi 'Hakita' Patala",
+    "publisher": "New Blood",
+    "release_date": "2020-09-03",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1229490/header.jpg",
+    "genres": [
+      "shooter",
+      "indie",
+      "action"
+    ],
+    "tags": [
+      "сложная",
+      "динамика",
+      "ретро",
+      "пиксели"
+    ],
+    "description": "Сверхзвуковой олдскульный шутер на стильной скорости, где здоровье восполняется свежей кровью врагов."
+  },
+  {
+    "title": "Ready or Not",
+    "slug": "ready-or-not",
+    "developer": "VOID Interactive",
+    "publisher": "VOID Interactive",
+    "release_date": "2023-12-13",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1144200/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "тактика",
+      "реализм",
+      "кооператив",
+      "симулятор"
+    ],
+    "description": "Бескомпромиссный тактический SWAT-симулятор штурма зданий с максимальным вниманием к деталям."
+  },
+  {
+    "title": "Hunt: Showdown 1896",
+    "slug": "hunt-showdown",
+    "developer": "Crytek",
+    "publisher": "Crytek",
+    "release_date": "2019-08-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/594650/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "PvPvE",
+      "хоррор",
+      "атмосфера",
+      "вестерн"
+    ],
+    "description": "Напряженная охота за головами монстров в болотах Луизианы с упором на звук и механику ганфайта."
+  },
+  {
+    "title": "Sid Meier's Civilization VI",
+    "slug": "civilization-vi",
+    "developer": "Firaxis Games",
+    "publisher": "2K",
+    "release_date": "2016-10-21",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg",
+    "genres": [
+      "strategy"
+    ],
+    "tags": [
+      "пошаговая",
+      "история",
+      "дипломатия",
+      "строительство"
+    ],
+    "description": "Глобальная 4X-стратегия о развитии человеческой цивилизации от каменного века до колонизации космоса."
+  },
+  {
+    "title": "Hearts of Iron IV",
+    "slug": "hearts-of-iron-iv",
+    "developer": "Paradox Development Studio",
+    "publisher": "Paradox Interactive",
+    "release_date": "2016-06-06",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/394360/header.jpg",
+    "genres": [
+      "strategy"
+    ],
+    "tags": [
+      "вторая-мировая",
+      "история",
+      "глобальная",
+      "тактика"
+    ],
+    "description": "Самый масштабный глобальный симулятор Второй мировой войны с детальным контролем производства и фронтов."
+  },
+  {
+    "title": "Stellaris",
+    "slug": "stellaris",
+    "developer": "Paradox Development Studio",
+    "publisher": "Paradox Interactive",
+    "release_date": "2016-05-09",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/281990/header.jpg",
+    "genres": [
+      "strategy"
+    ],
+    "tags": [
+      "космос",
+      "4X",
+      "научная-фантастика",
+      "дипломатия"
+    ],
+    "description": "Эпическая космическая 4X-стратегия с исследовательской экспедицией и созданием межзвездной империи."
+  },
+  {
+    "title": "Crusader Kings III",
+    "slug": "crusader-kings-iii",
+    "developer": "Paradox Development Studio",
+    "publisher": "Paradox Interactive",
+    "release_date": "2020-09-01",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg",
+    "genres": [
+      "strategy",
+      "rpg"
+    ],
+    "tags": [
+      "средневековье",
+      "династия",
+      "интриги",
+      "сюжет"
+    ],
+    "description": "Симулятор средневекового феодала с интригами, браками, войнами и выживанием знатного рода."
+  },
+  {
+    "title": "Total War: WARHAMMER III",
+    "slug": "total-war-warhammer-iii",
+    "developer": "Creative Assembly",
+    "publisher": "SEGA",
+    "release_date": "2022-02-17",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1142710/header.jpg",
+    "genres": [
+      "strategy",
+      "action"
+    ],
+    "tags": [
+      "фэнтези",
+      "масштабно",
+      "тактика",
+      "пошаговая"
+    ],
+    "description": "Колоссальные битвы сотен фракций в мире темного фэнтези Warhammer с гигантскими монстрами и магией."
+  },
+  {
+    "title": "Age of Empires II: Definitive Edition",
+    "slug": "age-of-empires-ii-de",
+    "developer": "World's Edge",
+    "publisher": "Xbox Game Studios",
+    "release_date": "2019-11-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/813780/header.jpg",
+    "genres": [
+      "strategy"
+    ],
+    "tags": [
+      "RTS",
+      "средневековье",
+      "история",
+      "соревновательная"
+    ],
+    "description": "Бессмертная классика стратегий в реальном времени в потрясающем 4K-разрешении."
+  },
+  {
+    "title": "XCOM 2",
+    "slug": "xcom-2",
+    "developer": "Firaxis Games",
+    "publisher": "2K",
+    "release_date": "2016-02-05",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/268500/header.jpg",
+    "genres": [
+      "strategy"
+    ],
+    "tags": [
+      "пошаговая",
+      "тактика",
+      "пришельцы",
+      "сложная"
+    ],
+    "description": "Пошаговая тактическая партизанская война отряда бойцов сопротивления против захвативших Землю пришельцев."
+  },
+  {
+    "title": "Frostpunk",
+    "slug": "frostpunk",
+    "developer": "11 bit studios",
+    "publisher": "11 bit studios",
+    "release_date": "2018-04-24",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/323190/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator"
+    ],
+    "tags": [
+      "выживание",
+      "градострой",
+      "стимпанк",
+      "атмосфера"
+    ],
+    "description": "Драматичный симулятор выживания последнего города на замерзшей Земле вокруг гигантского генератора."
+  },
+  {
+    "title": "Manor Lords",
+    "slug": "manor-lords",
+    "developer": "Slavic Magic",
+    "publisher": "Hooded Horse",
+    "release_date": "2024-04-26",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1363080/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator"
+    ],
+    "tags": [
+      "средневековье",
+      "градострой",
+      "тактика",
+      "реализм"
+    ],
+    "description": "Исторический средневековый градостроительный симулятор с реалистичной экономикой и масштабными битвами."
+  },
+  {
+    "title": "RimWorld",
+    "slug": "rimworld",
+    "developer": "Ludeon Studios",
+    "publisher": "Ludeon Studios",
+    "release_date": "2018-10-17",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/294100/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator",
+      "indie"
+    ],
+    "tags": [
+      "выживание",
+      "песочница",
+      "ИИ",
+      "научная-фантастика"
+    ],
+    "description": "Глубочайший научно-фантастический симулятор колонии под управлением адаптивного ИИ-рассказчика."
+  },
+  {
+    "title": "Against the Storm",
+    "slug": "against-the-storm",
+    "developer": "Eremite Games",
+    "publisher": "Hooded Horse",
+    "release_date": "2023-12-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1336490/header.jpg",
+    "genres": [
+      "strategy",
+      "roguelike",
+      "indie"
+    ],
+    "tags": [
+      "градострой",
+      "фэнтези",
+      "процедурная"
+    ],
+    "description": "Уникальный roguelite-градостроительный симулятор в мире бесконечного темного дождя."
+  },
+  {
+    "title": "Hades",
+    "slug": "hades",
+    "developer": "Supergiant Games",
+    "publisher": "Supergiant Games",
+    "release_date": "2020-09-17",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "action"
+    ],
+    "tags": [
+      "мифология",
+      "сюжет",
+      "музыка",
+      "сложная"
+    ],
+    "description": "Динамичный roguelike-экшен принца Загрея, прорывающегося из владений бога подземного мира."
+  },
+  {
+    "title": "Hades II",
+    "slug": "hades-ii",
+    "developer": "Supergiant Games",
+    "publisher": "Supergiant Games",
+    "release_date": "2024-05-06",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1145350/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "action"
+    ],
+    "tags": [
+      "мифология",
+      "магия",
+      "экшен",
+      "сюжет"
+    ],
+    "description": "Продолжение саги о бессмертной Мелиное, сражающейся с титаном времени Кроносом."
+  },
+  {
+    "title": "Slay the Spire",
+    "slug": "slay-the-spire",
+    "developer": "MegaCrit",
+    "publisher": "Humble Games",
+    "release_date": "2019-01-23",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "strategy"
+    ],
+    "tags": [
+      "карточная",
+      "колодострой",
+      "тактика"
+    ],
+    "description": "Родоначальник жанра roguelike-колодостроения с четырьмя уникальными героями и синергиями реликвий."
+  },
+  {
+    "title": "Balatro",
+    "slug": "balatro",
+    "developer": "LocalThunk",
+    "publisher": "Playstack",
+    "release_date": "2024-02-20",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2379780/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "strategy"
+    ],
+    "tags": [
+      "покер",
+      "колодострой",
+      "затягивающая"
+    ],
+    "description": "Гипнотический покерный roguelike с джокерами, модификаторами карт и безумными множителями очков."
+  },
+  {
+    "title": "Dead Cells",
+    "slug": "dead-cells",
+    "developer": "Motion Twin",
+    "publisher": "Motion Twin",
+    "release_date": "2018-08-07",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/588650/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "action"
+    ],
+    "tags": [
+      "метроидвания",
+      "пиксели",
+      "сложная",
+      "динамика"
+    ],
+    "description": "Бешеный экшен-платформер с процедурно генерируемым замком и стремительной боевкой."
+  },
+  {
+    "title": "The Binding of Isaac: Rebirth",
+    "slug": "the-binding-of-isaac-rebirth",
+    "developer": "Nicalis",
+    "publisher": "Nicalis",
+    "release_date": "2014-11-04",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/250900/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "action"
+    ],
+    "tags": [
+      "пиксели",
+      "процедурная",
+      "сложная",
+      "классика"
+    ],
+    "description": "Культовый top-down рогалик с сотнями безумных предметов и бесконечной реиграбельностью."
+  },
+  {
+    "title": "Risk of Rain 2",
+    "slug": "risk-of-rain-2",
+    "developer": "Hopoo Games",
+    "publisher": "Gearbox Publishing",
+    "release_date": "2020-08-11",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/632360/header.jpg",
+    "genres": [
+      "action",
+      "roguelike",
+      "shooter"
+    ],
+    "tags": [
+      "кооператив",
+      "3D",
+      "процедурная",
+      "космос"
+    ],
+    "description": "Кооперативный трехмерный экшен-рогалик на чужой планете с постоянно растущей сложностью таймера."
+  },
+  {
+    "title": "Enter the Gungeon",
+    "slug": "enter-the-gungeon",
+    "developer": "Dodge Roll",
+    "publisher": "Devolver Digital",
+    "release_date": "2016-04-05",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/311690/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "action"
+    ],
+    "tags": [
+      "пулевой-ад",
+      "юмор",
+      "оружие",
+      "пиксели"
+    ],
+    "description": "Ураганный рогалик в Оружелье с кувырками через столы и сотнями пушек, стреляющих пулями."
+  },
+  {
+    "title": "Vampire Survivors",
+    "slug": "vampire-survivors",
+    "developer": "poncle",
+    "publisher": "poncle",
+    "release_date": "2022-10-20",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1794680/header.jpg",
+    "genres": [
+      "indie",
+      "action",
+      "roguelike"
+    ],
+    "tags": [
+      "автострельба",
+      "орды",
+      "пиксели"
+    ],
+    "description": "Взрывной хит об отбивании от тысяч монстров одной рукой с автоматической стрельбой."
+  },
+  {
+    "title": "Inscryption",
+    "slug": "inscryption",
+    "developer": "Daniel Mullins Games",
+    "publisher": "Devolver Digital",
+    "release_date": "2021-10-19",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1092790/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "strategy"
+    ],
+    "tags": [
+      "хоррор",
+      "сюжет",
+      "карты",
+      "головоломка"
+    ],
+    "description": "Мрачная деконструкция карточных рогаликов с загадками таинственной лесной хижины."
+  },
+  {
+    "title": "Darkest Dungeon",
+    "slug": "darkest-dungeon",
+    "developer": "Red Hook Studios",
+    "publisher": "Red Hook Studios",
+    "release_date": "2016-01-19",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/262060/header.jpg",
+    "genres": [
+      "rpg",
+      "strategy",
+      "roguelike"
+    ],
+    "tags": [
+      "лафкрафт",
+      "стресс",
+      "пошаговая",
+      "сложная"
+    ],
+    "description": "Хардкорная готическая RPG о психологическом стрессе искателей приключений в темных подземельях."
+  },
+  {
+    "title": "Noita",
+    "slug": "noita",
+    "developer": "Nolla Games",
+    "publisher": "Nolla Games",
+    "release_date": "2020-10-15",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/881100/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "action"
+    ],
+    "tags": [
+      "физика",
+      "магия",
+      "разрушение",
+      "сложная"
+    ],
+    "description": "Рогалик с физической симуляцией каждого пикселя мира и созданием кастомных магических жезлов."
+  },
+  {
+    "title": "Hollow Knight",
+    "slug": "hollow-knight",
+    "developer": "Team Cherry",
+    "publisher": "Team Cherry",
+    "release_date": "2017-02-24",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg",
+    "genres": [
+      "indie",
+      "action"
+    ],
+    "tags": [
+      "метроидвания",
+      "атмосфера",
+      "сложная",
+      "музыка"
+    ],
+    "description": "Атмосферное приключение в забытом королевстве жуков Халлоунест с великолепной боевкой."
+  },
+  {
+    "title": "Celeste",
+    "slug": "celeste",
+    "developer": "Maddy Makes Games",
+    "publisher": "Maddy Makes Games",
+    "release_date": "2018-01-25",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg",
+    "genres": [
+      "indie",
+      "action"
+    ],
+    "tags": [
+      "платформер",
+      "сюжет",
+      "музыка",
+      "сложная"
+    ],
+    "description": "Трогательный платформер о покорении загадочной горы и преодолении внутренних сомнений."
+  },
+  {
+    "title": "Ori and the Will of the Wisps",
+    "slug": "ori-and-the-will-of-the-wisps",
+    "developer": "Moon Studios",
+    "publisher": "Xbox Game Studios",
+    "release_date": "2020-03-11",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1057090/header.jpg",
+    "genres": [
+      "action",
+      "indie"
+    ],
+    "tags": [
+      "метроидвания",
+      "графика",
+      "музыка",
+      "сказка"
+    ],
+    "description": "Живописная сказка о духе Ори с динамичной боевой системой и эмоциональной историей."
+  },
+  {
+    "title": "Cuphead",
+    "slug": "cuphead",
+    "developer": "Studio MDHR",
+    "publisher": "Studio MDHR",
+    "release_date": "2017-09-29",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/268910/header.jpg",
+    "genres": [
+      "indie",
+      "action"
+    ],
+    "tags": [
+      "ретро",
+      "анимация",
+      "боссы",
+      "сложная",
+      "кооператив"
+    ],
+    "description": "Хардкорный забег по боссам в потрясающей ретро-стилистике мультфильмов 1930-х годов."
+  },
+  {
+    "title": "Undertale",
+    "slug": "undertale",
+    "developer": "tobyfox",
+    "publisher": "tobyfox",
+    "release_date": "2015-09-15",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg",
+    "genres": [
+      "indie",
+      "rpg"
+    ],
+    "tags": [
+      "сюжет",
+      "юмор",
+      "музыка",
+      "ретро",
+      "шедевр"
+    ],
+    "description": "Культовая душевная RPG, где никого не обязательно убивать, а каждый персонаж становится другом."
+  },
+  {
+    "title": "Outer Wilds",
+    "slug": "outer-wilds",
+    "developer": "Mobius Digital",
+    "publisher": "Annapurna Interactive",
+    "release_date": "2020-06-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/753640/header.jpg",
+    "genres": [
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "космос",
+      "тайна",
+      "временная-петля",
+      "исследование"
+    ],
+    "description": "Гениальное исследование застрявшей в 22-минутной петле планетной системы перед взрывом сверхновой."
+  },
+  {
+    "title": "Katana ZERO",
+    "slug": "katana-zero",
+    "developer": "Askiisoft",
+    "publisher": "Devolver Digital",
+    "release_date": "2019-04-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/460950/header.jpg",
+    "genres": [
+      "indie",
+      "action"
+    ],
+    "tags": [
+      "неон",
+      "киберпанк",
+      "сюжет",
+      "замедление"
+    ],
+    "description": "Стильный неонуарный экшен о самурае-киллере с замедлением времени и ударом на поражение."
+  },
+  {
+    "title": "Hotline Miami",
+    "slug": "hotline-miami",
+    "developer": "Dennaton Games",
+    "publisher": "Devolver Digital",
+    "release_date": "2012-10-23",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/219150/header.jpg",
+    "genres": [
+      "indie",
+      "action"
+    ],
+    "tags": [
+      "ретро",
+      "насилие",
+      "музыка",
+      "неон"
+    ],
+    "description": "Кровавый драйвовый top-down боевик в Майами 1989 года с легендарным синтвейв-саундтреком."
+  },
+  {
+    "title": "Blasphemous",
+    "slug": "blasphemous",
+    "developer": "The Game Kitchen",
+    "publisher": "Team17",
+    "release_date": "2019-09-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/774361/header.jpg",
+    "genres": [
+      "indie",
+      "action"
+    ],
+    "tags": [
+      "соулслайк",
+      "метроидвания",
+      "готика",
+      "пиксели"
+    ],
+    "description": "Мрачная метроидвания о Кающемся в мире испанского религиозного фольклора Кустодии."
+  },
+  {
+    "title": "Stray",
+    "slug": "stray",
+    "developer": "BlueTwelve Studio",
+    "publisher": "Annapurna Interactive",
+    "release_date": "2022-07-19",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1332010/header.jpg",
+    "genres": [
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "кот",
+      "киберпанк",
+      "атмосфера",
+      "роботы"
+    ],
+    "description": "Уютное киберпанковое приключение рыжего бродячего кота в неоновом городе забытых роботов."
+  },
+  {
+    "title": "Inside",
+    "slug": "inside",
+    "developer": "Playdead",
+    "publisher": "Playdead",
+    "release_date": "2016-07-07",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/304430/header.jpg",
+    "genres": [
+      "indie",
+      "adventure",
+      "action"
+    ],
+    "tags": [
+      "антиутопия",
+      "атмосфера",
+      "головоломка",
+      "минимализм"
+    ],
+    "description": "Мрачный шедевр от создателей Limbo о мальчике, пробирающемся сквозь пугающий антиутопический комплекс."
+  },
+  {
+    "title": "Tunic",
+    "slug": "tunic",
+    "developer": "TUNIC Team",
+    "publisher": "Finji",
+    "release_date": "2022-03-16",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/553420/header.jpg",
+    "genres": [
+      "indie",
+      "action",
+      "adventure"
+    ],
+    "tags": [
+      "головоломка",
+      "тайна",
+      "изометрия",
+      "зельда"
+    ],
+    "description": "Изометрическое приключение лисенка со сбором страниц ностальгического игрового мануала."
+  },
+  {
+    "title": "Terraria",
+    "slug": "terraria",
+    "developer": "Re-Logic",
+    "publisher": "Re-Logic",
+    "release_date": "2011-05-16",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg",
+    "genres": [
+      "indie",
+      "survival",
+      "action"
+    ],
+    "tags": [
+      "песочница",
+      "крафтинг",
+      "боссы",
+      "пиксели"
+    ],
+    "description": "Гигантская двухмерная песочница с исследованием недр, строительством и десятками эпических боссов."
+  },
+  {
+    "title": "Rust",
+    "slug": "rust",
+    "developer": "Facepunch Studios",
+    "publisher": "Facepunch Studios",
+    "release_date": "2018-02-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg",
+    "genres": [
+      "action",
+      "survival"
+    ],
+    "tags": [
+      "мультиплеер",
+      "крафтинг",
+      "рейды",
+      "открытый-мир"
+    ],
+    "description": "Беспощадный онлайн-симулятор выживания на острове с постройкой баз, рейдами и перестрелками."
+  },
+  {
+    "title": "Subnautica",
+    "slug": "subnautica",
+    "developer": "Unknown Worlds",
+    "publisher": "Unknown Worlds",
+    "release_date": "2018-01-23",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg",
+    "genres": [
+      "indie",
+      "survival",
+      "simulator"
+    ],
+    "tags": [
+      "океан",
+      "исследование",
+      "научная-фантастика",
+      "атмосфера"
+    ],
+    "description": "Погружение на глубины неизведанной водной планеты с постройкой баз и подводных лодок."
+  },
+  {
+    "title": "Valheim",
+    "slug": "valheim",
+    "developer": "Iron Gate AB",
+    "publisher": "Coffee Stain",
+    "release_date": "2021-02-02",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/892970/header.jpg",
+    "genres": [
+      "indie",
+      "survival",
+      "action"
+    ],
+    "tags": [
+      "викинги",
+      "кооператив",
+      "крафтинг",
+      "процедурная"
+    ],
+    "description": "Скандинавское выживание викингов в десятом мире с постройкой драккаров и битвами с боссами."
+  },
+  {
+    "title": "The Forest",
+    "slug": "the-forest",
+    "developer": "Endnight Games",
+    "publisher": "Endnight Games",
+    "release_date": "2018-04-30",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/242760/header.jpg",
+    "genres": [
+      "survival",
+      "action",
+      "horror"
+    ],
+    "tags": [
+      "кооператив",
+      "крафтинг",
+      "каннибалы",
+      "остров"
+    ],
+    "description": "Выживание после авиакатастрофы на полуострове с обществом каннибалов и постройкой форта."
+  },
+  {
+    "title": "Sons of the Forest",
+    "slug": "sons-of-the-forest",
+    "developer": "Endnight Games",
+    "publisher": "Newnight",
+    "release_date": "2024-02-22",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1326470/header.jpg",
+    "genres": [
+      "survival",
+      "action",
+      "horror"
+    ],
+    "tags": [
+      "кооператив",
+      "графика",
+      "крафтинг",
+      "остров"
+    ],
+    "description": "Сиквел популярного симулятора выживания на отдаленном острове с продвинутой физикой."
+  },
+  {
+    "title": "Raft",
+    "slug": "raft",
+    "developer": "Redbeet Interactive",
+    "publisher": "Axolot Games",
+    "release_date": "2022-06-20",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg",
+    "genres": [
+      "indie",
+      "survival",
+      "adventure"
+    ],
+    "tags": [
+      "океан",
+      "плот",
+      "кооператив",
+      "крафтинг"
+    ],
+    "description": "Выживание на деревянном плоту посреди бескрайнего океана с крюком для ловли мусора."
+  },
+  {
+    "title": "Project Zomboid",
+    "slug": "project-zomboid",
+    "developer": "The Indie Stone",
+    "publisher": "The Indie Stone",
+    "release_date": "2013-11-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg",
+    "genres": [
+      "indie",
+      "survival",
+      "rpg"
+    ],
+    "tags": [
+      "зомби",
+      "хардкор",
+      "симулятор",
+      "постапокалипсис"
+    ],
+    "description": "Ультимативный изометрический симулятор выживания при зомби-апокалипсисе в Кентукки."
+  },
+  {
+    "title": "Don't Starve Together",
+    "slug": "dont-starve-together",
+    "developer": "Klei Entertainment",
+    "publisher": "Klei Entertainment",
+    "release_date": "2016-04-21",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/322330/header.jpg",
+    "genres": [
+      "indie",
+      "survival"
+    ],
+    "tags": [
+      "кооператив",
+      "готика",
+      "крафтинг",
+      "монстры"
+    ],
+    "description": "Кооперативное выживание в причудливом и опасном мире в фирменной графике Тима Бёртона."
+  },
+  {
+    "title": "Enshrouded",
+    "slug": "enshrouded",
+    "developer": "Keen Games",
+    "publisher": "Keen Games",
+    "release_date": "2024-01-24",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1203620/header.jpg",
+    "genres": [
+      "rpg",
+      "action",
+      "survival"
+    ],
+    "tags": [
+      "воксели",
+      "крафтинг",
+      "кооператив",
+      "фэнтези"
+    ],
+    "description": "Кооперативная воксельная action-RPG с масштабным строительством и исследованием мира в пелене Тумана."
+  },
+  {
+    "title": "V Rising",
+    "slug": "v-rising",
+    "developer": "Stunlock Studios",
+    "publisher": "Stunlock Studios",
+    "release_date": "2024-05-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1604030/header.jpg",
+    "genres": [
+      "action",
+      "survival",
+      "rpg"
+    ],
+    "tags": [
+      "вампиры",
+      "замок",
+      "кооператив",
+      "изометрия"
+    ],
+    "description": "Пробудитесь ослабленным вампиром, постройте величественный замок и покорите мир Вардоран."
+  },
+  {
+    "title": "Factorio",
+    "slug": "factorio",
+    "developer": "Wube Software",
+    "publisher": "Wube Software",
+    "release_date": "2020-08-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/427520/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator",
+      "indie"
+    ],
+    "tags": [
+      "автоматизация",
+      "заводы",
+      "конвейеры",
+      "крафтинг"
+    ],
+    "description": "Легендарный симулятор строительства и оптимизации колоссальных автоматизированных заводов."
+  },
+  {
+    "title": "Satisfactory",
+    "slug": "satisfactory",
+    "developer": "Coffee Stain Studios",
+    "publisher": "Coffee Stain",
+    "release_date": "2024-09-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/526870/header.jpg",
+    "genres": [
+      "simulator",
+      "indie",
+      "open-world"
+    ],
+    "tags": [
+      "автоматизация",
+      "от-первого-лица",
+      "заводы",
+      "графика"
+    ],
+    "description": "Грандиозная фабрика от первого лица на живописной планете с конвейерами и поездами."
+  },
+  {
+    "title": "Stardew Valley",
+    "slug": "stardew-valley",
+    "developer": "ConcernedApe",
+    "publisher": "ConcernedApe",
+    "release_date": "2016-02-26",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg",
+    "genres": [
+      "indie",
+      "simulator",
+      "rpg"
+    ],
+    "tags": [
+      "ферма",
+      "уютная",
+      "пиксели",
+      "рыбалка"
+    ],
+    "description": "Уютная и душевная загородная жизнь с фермерством, обустройством хозяйства и дружбой с жителями."
+  },
+  {
+    "title": "Euro Truck Simulator 2",
+    "slug": "euro-truck-simulator-2",
+    "developer": "SCS Software",
+    "publisher": "SCS Software",
+    "release_date": "2012-10-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/227300/header.jpg",
+    "genres": [
+      "simulator"
+    ],
+    "tags": [
+      "грузовики",
+      "реализм",
+      "открытый-мир",
+      "релакс"
+    ],
+    "description": "Медитативные грузоперевозки на тягачах по реалистичным автобанам Европы под любимую музыку."
+  },
+  {
+    "title": "Forza Horizon 5",
+    "slug": "forza-horizon-5",
+    "developer": "Playground Games",
+    "publisher": "Xbox Game Studios",
+    "release_date": "2021-11-09",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg",
+    "genres": [
+      "simulator",
+      "open-world"
+    ],
+    "tags": [
+      "гонки",
+      "автомобили",
+      "графика",
+      "открытый-мир"
+    ],
+    "description": "Красочный праздник автоспорта в захватывающей Мексике с сотнями суперкаров."
+  },
+  {
+    "title": "BeamNG.drive",
+    "slug": "beamng-drive",
+    "developer": "BeamNG",
+    "publisher": "BeamNG",
+    "release_date": "2015-05-29",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/284160/header.jpg",
+    "genres": [
+      "simulator"
+    ],
+    "tags": [
+      "физика",
+      "мягкие-тела",
+      "автомобили",
+      "аварии"
+    ],
+    "description": "Непревзойденная физическая модель деформации автомобилей с мягкими телами."
+  },
+  {
+    "title": "Teardown",
+    "slug": "teardown",
+    "developer": "Tuxedo Labs",
+    "publisher": "Saber Interactive",
+    "release_date": "2022-04-21",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1167630/header.jpg",
+    "genres": [
+      "indie",
+      "simulator",
+      "action"
+    ],
+    "tags": [
+      "разрушение",
+      "воксели",
+      "физика",
+      "ограбления"
+    ],
+    "description": "Идеальное воксельное разрушение мира ради планирования дерзких скоростных ограблений."
+  },
+  {
+    "title": "PowerWash Simulator",
+    "slug": "powerwash-simulator",
+    "developer": "FuturLab",
+    "publisher": "Square Enix",
+    "release_date": "2022-07-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1290000/header.jpg",
+    "genres": [
+      "simulator",
+      "indie"
+    ],
+    "tags": [
+      "релакс",
+      "медитация",
+      "мойка",
+      "чистота"
+    ],
+    "description": "Успокаивающий симулятор очистки грязи струей высокого давления до зеркального блеска."
+  },
+  {
+    "title": "It Takes Two",
+    "slug": "it-takes-two",
+    "developer": "Hazelight",
+    "publisher": "Electronic Arts",
+    "release_date": "2021-03-26",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg",
+    "genres": [
+      "action",
+      "adventure"
+    ],
+    "tags": [
+      "кооператив",
+      "для-двоих",
+      "платформер",
+      "сюжет"
+    ],
+    "description": "Шедевральное кооперативное платформер-приключение для двух игроков о спасении семьи."
+  },
+  {
+    "title": "Lethal Company",
+    "slug": "lethal-company",
+    "developer": "Zeekerss",
+    "publisher": "Zeekerss",
+    "release_date": "2023-10-23",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg",
+    "genres": [
+      "indie",
+      "horror",
+      "action"
+    ],
+    "tags": [
+      "кооператив",
+      "юмор",
+      "космос",
+      "монстры"
+    ],
+    "description": "Вирусный кооперативный хоррор о сборе металлолома на заброшенных лунах для загадочной Компании."
+  },
+  {
+    "title": "Phasmophobia",
+    "slug": "phasmophobia",
+    "developer": "Kinetic Games",
+    "publisher": "Kinetic Games",
+    "release_date": "2020-09-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/739630/header.jpg",
+    "genres": [
+      "indie",
+      "horror",
+      "action"
+    ],
+    "tags": [
+      "кооператив",
+      "призраки",
+      "микрофон",
+      "расследование"
+    ],
+    "description": "Паранормальное психологическое расследование присутствия призраков группой охотников."
+  },
+  {
+    "title": "Overcooked! 2",
+    "slug": "overcooked-2",
+    "developer": "Ghost Town Games",
+    "publisher": "Team17",
+    "release_date": "2018-08-07",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/448510/header.jpg",
+    "genres": [
+      "indie",
+      "action"
+    ],
+    "tags": [
+      "кооператив",
+      "кухня",
+      "хаос",
+      "вечеринка"
+    ],
+    "description": "Веселый кулинарный хаос на безумных кухнях с бросанием ингредиентов между поварами."
+  },
+  {
+    "title": "Among Us",
+    "slug": "among-us",
+    "developer": "Innersloth",
+    "publisher": "Innersloth",
+    "release_date": "2018-11-16",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg",
+    "genres": [
+      "indie",
+      "strategy"
+    ],
+    "tags": [
+      "мультиплеер",
+      "мафия",
+      "детектив",
+      "предатель"
+    ],
+    "description": "Всемирно известная социальная дедукция на космическом корабле в поисках коварных предателей."
+  },
+  {
+    "title": "Resident Evil 4 Remake",
+    "slug": "resident-evil-4-remake",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "release_date": "2023-03-24",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg",
+    "genres": [
+      "action",
+      "horror",
+      "shooter"
+    ],
+    "tags": [
+      "выживание",
+      "зомби",
+      "сюжет",
+      "атмосфера"
+    ],
+    "description": "Эталонный экшен-хоррор о миссии агента Леона Кеннеди в таинственной европейской глуши."
+  },
+  {
+    "title": "Resident Evil 2 Remake",
+    "slug": "resident-evil-2-remake",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "release_date": "2019-01-25",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/883710/header.jpg",
+    "genres": [
+      "action",
+      "horror"
+    ],
+    "tags": [
+      "зомби",
+      "выживание",
+      "атмосфера",
+      "классика"
+    ],
+    "description": "Блестящее возвращение в охваченный вирусом Ракун-Сити вместе с Леоном и Клэр."
+  },
+  {
+    "title": "Resident Evil Village",
+    "slug": "resident-evil-village",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "release_date": "2021-05-07",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1196590/header.jpg",
+    "genres": [
+      "action",
+      "horror"
+    ],
+    "tags": [
+      "готика",
+      "вампиры",
+      "экшен",
+      "сюжет"
+    ],
+    "description": "Готическое выживание Итана Уинтерса в заснеженной деревне и замке леди Димитреску."
+  },
+  {
+    "title": "Dead Space Remake",
+    "slug": "dead-space-remake",
+    "developer": "Motive",
+    "publisher": "Electronic Arts",
+    "release_date": "2023-01-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1693980/header.jpg",
+    "genres": [
+      "action",
+      "horror",
+      "shooter"
+    ],
+    "tags": [
+      "космос",
+      "некроморфы",
+      "атмосфера",
+      "расчленение"
+    ],
+    "description": "Потрясающий научно-фантастический хоррор на борту мертвого космического потрошителя USG Ишимура."
+  },
+  {
+    "title": "Alien: Isolation",
+    "slug": "alien-isolation",
+    "developer": "Creative Assembly",
+    "publisher": "SEGA",
+    "release_date": "2014-10-06",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/214490/header.jpg",
+    "genres": [
+      "horror",
+      "action"
+    ],
+    "tags": [
+      "стелс",
+      "чужой",
+      "космос",
+      "выживание"
+    ],
+    "description": "Леденящий душу стелс-хоррор на станции Севастополь против адаптивного искусственного интеллекта Чужого."
+  },
+  {
+    "title": "Outlast",
+    "slug": "outlast",
+    "developer": "Red Barrels",
+    "publisher": "Red Barrels",
+    "release_date": "2013-09-04",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/238320/header.jpg",
+    "genres": [
+      "horror",
+      "indie"
+    ],
+    "tags": [
+      "психиатрия",
+      "камера",
+      "бег",
+      "прятки"
+    ],
+    "description": "Культовый хоррор от первого лица о журналисте с видеокамерой в заброшенной психиатрической лечебнице."
+  },
+  {
+    "title": "Signalis",
+    "slug": "signalis",
+    "developer": "rose-engine",
+    "publisher": "Humble Games",
+    "release_date": "2022-10-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1262350/header.jpg",
+    "genres": [
+      "indie",
+      "horror",
+      "action"
+    ],
+    "tags": [
+      "ретро",
+      "пиксели",
+      "сюжет",
+      "научная-фантастика"
+    ],
+    "description": "Классический сурвайвал-хоррор в эстетике аниме 90-х и пиксельной меланхолии антиутопии."
+  },
+  {
+    "title": "Buckshot Roulette",
+    "slug": "buckshot-roulette",
+    "developer": "Mike Klubnika",
+    "publisher": "Critical Reflex",
+    "release_date": "2024-04-04",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2835570/header.jpg",
+    "genres": [
+      "indie",
+      "strategy"
+    ],
+    "tags": [
+      "рулетка",
+      "хоррор",
+      "дробовик",
+      "атмосфера"
+    ],
+    "description": "Напряженная игра в рулетку с дробовиком 12 калибра против жуткого Дилера на чердаке ночного клуба."
+  },
+  {
+    "title": "Portal 2",
+    "slug": "portal-2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release_date": "2011-04-19",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/620/header.jpg",
+    "genres": [
+      "action",
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "головоломка",
+      "юмор",
+      "кооператив",
+      "сюжет",
+      "шедевр"
+    ],
+    "description": "Искрометное приключение с портальной пушкой, гениальными загадками Aperture Science и GLaDOS."
+  },
+  {
+    "title": "Portal",
+    "slug": "portal",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release_date": "2007-10-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/400/header.jpg",
+    "genres": [
+      "action",
+      "indie"
+    ],
+    "tags": [
+      "головоломка",
+      "физика",
+      "короткая",
+      "классика"
+    ],
+    "description": "Легендарный физический пазл, перевернувший представление о пространственных головоломках."
+  },
+  {
+    "title": "The Talos Principle",
+    "slug": "the-talos-principle",
+    "developer": "Croteam",
+    "publisher": "Devolver Digital",
+    "release_date": "2014-12-11",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/257510/header.jpg",
+    "genres": [
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "головоломка",
+      "философия",
+      "сюжет",
+      "лазеры"
+    ],
+    "description": "Глубокая философская притча о сознании андроида с решением лазерных головоломок."
+  },
+  {
+    "title": "Baba Is You",
+    "slug": "baba-is-you",
+    "developer": "Arvi Teikari",
+    "publisher": "Hempuli Oy",
+    "release_date": "2019-03-13",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/736260/header.jpg",
+    "genres": [
+      "indie"
+    ],
+    "tags": [
+      "головоломка",
+      "правила",
+      "логика",
+      "гениально"
+    ],
+    "description": "Уникальная игра-головоломка, где правила каждого уровня написаны словами на экране и их можно менять."
+  },
+  {
+    "title": "Dota 2",
+    "slug": "dota-2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "release_date": "2013-07-09",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/570/header.jpg",
+    "genres": [
+      "strategy",
+      "action"
+    ],
+    "tags": [
+      "мультиплеер",
+      "MOBA",
+      "тактика",
+      "соревновательная"
+    ],
+    "description": "Легендарная соревновательная MOBA-арена 5х5 с более чем сотней уникальных героев."
+  },
+  {
+    "title": "Palworld",
+    "slug": "palworld",
+    "developer": "Pocketpair",
+    "publisher": "Pocketpair",
+    "release_date": "2024-01-19",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1623730/header.jpg",
+    "genres": [
+      "action",
+      "survival",
+      "rpg",
+      "open-world"
+    ],
+    "tags": [
+      "крафтинг",
+      "мультиплеер",
+      "открытый-мир"
+    ],
+    "description": "Приключение с коллекционированием причудливых Палов, строительством баз и исследованием островов."
+  },
+  {
+    "title": "Dwarven Realms / Deep Rock Galactic Survivor",
+    "slug": "drg-survivor",
+    "developer": "Funday Games",
+    "publisher": "Ghost Ship",
+    "release_date": "2024-02-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2321470/header.jpg",
+    "genres": [
+      "action",
+      "indie",
+      "roguelike"
+    ],
+    "tags": [
+      "автострельба",
+      "процедурная",
+      "гномы"
+    ],
+    "description": "Автошутер на выживание во вселенной Deep Rock Galactic с бурением минералов."
+  },
+  {
+    "title": "Total War: ROME II",
+    "slug": "total-war-rome-ii",
+    "developer": "Creative Assembly",
+    "publisher": "SEGA",
+    "release_date": "2013-09-03",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/214950/header.jpg",
+    "genres": [
+      "strategy"
+    ],
+    "tags": [
+      "история",
+      "рим",
+      "тактика",
+      "античность"
+    ],
+    "description": "Глобальная стратегия об античных легионах Рима и покорении Средиземноморья."
+  },
+  {
+    "title": "Middle-earth: Shadow of War",
+    "slug": "middle-earth-shadow-of-war",
+    "developer": "Monolith",
+    "publisher": "Warner Bros.",
+    "release_date": "2017-10-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/356190/header.jpg",
+    "genres": [
+      "action",
+      "rpg",
+      "open-world"
+    ],
+    "tags": [
+      "немезис",
+      "фэнтези",
+      "орки",
+      "открытый-мир"
+    ],
+    "description": "Осады крепостей в Мордоре с уникальной революционной системой заклятых врагов Nemesis."
+  },
+  {
+    "title": "Mad Max",
+    "slug": "mad-max",
+    "developer": "Avalanche Studios",
+    "publisher": "Warner Bros.",
+    "release_date": "2015-09-01",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/234140/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "постапокалипсис",
+      "автомобили",
+      "драки",
+      "пустыня"
+    ],
+    "description": "Брутальный боевик в бескрайней постапокалиптической Пустоши за рулем боевого Шедевра."
+  },
+  {
+    "title": "Watch Dogs 2",
+    "slug": "watch-dogs-2",
+    "developer": "Ubisoft",
+    "publisher": "Ubisoft",
+    "release_date": "2016-11-28",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/447040/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "хакеры",
+      "открытый-мир",
+      "сан-франциско"
+    ],
+    "description": "Солнечный хакерский экшен в Сан-Франциско с дронами, гаджетами и взломом электроники."
+  },
+  {
+    "title": "Just Cause 3",
+    "slug": "just-cause-3",
+    "developer": "Avalanche Studios",
+    "publisher": "Square Enix",
+    "release_date": "2015-12-01",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/225540/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "разрушение",
+      "крюк-кошка",
+      "вингсьют",
+      "взрывы"
+    ],
+    "description": "Абсолютная свобода разрушения на средиземноморском острове с вингсьютом и ракетницами."
+  },
+  {
+    "title": "Sleeping Dogs: Definitive Edition",
+    "slug": "sleeping-dogs",
+    "developer": "United Front",
+    "publisher": "Square Enix",
+    "release_date": "2014-10-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/307690/header.jpg",
+    "genres": [
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "гонконг",
+      "боевые-искусства",
+      "криминал"
+    ],
+    "description": "Кинематографичный криминальный боевик под прикрытием в триадах ночного Гонконга."
+  },
+  {
+    "title": "Far Cry 3",
+    "slug": "far-cry-3",
+    "developer": "Ubisoft",
+    "publisher": "Ubisoft",
+    "release_date": "2012-11-29",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/220240/header.jpg",
+    "genres": [
+      "shooter",
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "тропики",
+      "безумие",
+      "сюжет",
+      "выживание"
+    ],
+    "description": "Культовый шутер на тропическом острове с харизматичным злодеем Ваасом."
+  },
+  {
+    "title": "Far Cry 5",
+    "slug": "far-cry-5",
+    "developer": "Ubisoft",
+    "publisher": "Ubisoft",
+    "release_date": "2018-03-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/552520/header.jpg",
+    "genres": [
+      "shooter",
+      "action",
+      "open-world"
+    ],
+    "tags": [
+      "кооператив",
+      "открытый-мир",
+      "культ",
+      "экшен"
+    ],
+    "description": "Освобождение округа Хоуп в Монтане от религиозного культа судного дня Врата Эдема."
+  },
+  {
+    "title": "Borderlands 2",
+    "slug": "borderlands-2",
+    "developer": "Gearbox Software",
+    "publisher": "2K",
+    "release_date": "2012-09-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/49520/header.jpg",
+    "genres": [
+      "shooter",
+      "rpg",
+      "action"
+    ],
+    "tags": [
+      "лутер-шутер",
+      "кооператив",
+      "юмор",
+      "комиксы"
+    ],
+    "description": "Эталонный кооперативный лутер-шутер на Пандоре с миллионами видов безумного оружия."
+  },
+  {
+    "title": "Borderlands 3",
+    "slug": "borderlands-3",
+    "developer": "Gearbox Software",
+    "publisher": "2K",
+    "release_date": "2020-03-13",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/397540/header.jpg",
+    "genres": [
+      "shooter",
+      "rpg",
+      "action"
+    ],
+    "tags": [
+      "лутер-шутер",
+      "кооператив",
+      "оружие",
+      "экшен"
+    ],
+    "description": "Продолжение охоты за Хранилищами с четырьмя новыми Искателями по разным планетам галактики."
+  },
+  {
+    "title": "Risk of Rain Returns",
+    "slug": "risk-of-rain-returns",
+    "developer": "Hopoo Games",
+    "publisher": "Gearbox Publishing",
+    "release_date": "2023-11-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1337520/header.jpg",
+    "genres": [
+      "action",
+      "roguelike",
+      "indie"
+    ],
+    "tags": [
+      "пиксели",
+      "кооператив",
+      "ретро",
+      "музыка"
+    ],
+    "description": "Тщательно переработанная классика двумерного рогалика с новым лутом и выжившими."
+  },
+  {
+    "title": "Gunfire Reborn",
+    "slug": "gunfire-reborn",
+    "developer": "Duoyi Games",
+    "publisher": "Duoyi Games",
+    "release_date": "2021-11-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1217060/header.jpg",
+    "genres": [
+      "shooter",
+      "roguelike",
+      "action"
+    ],
+    "tags": [
+      "кооператив",
+      "пушки",
+      "фурри",
+      "стилизация"
+    ],
+    "description": "Кооперативный приключенческий roguelite-шутер с уникальными героями и билдами пушек."
+  },
+  {
+    "title": "Roboquest",
+    "slug": "roboquest",
+    "developer": "RyseUp Studios",
+    "publisher": "Starbreeze",
+    "release_date": "2023-11-07",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/692890/header.jpg",
+    "genres": [
+      "shooter",
+      "roguelike",
+      "action"
+    ],
+    "tags": [
+      "динамика",
+      "роботы",
+      "кооператив",
+      "музыка"
+    ],
+    "description": "Быстрый ритмичный roguelite-шутер от первого лица в ярком комиксном стиле будущего."
+  },
+  {
+    "title": "Spelunky 2",
+    "slug": "spelunky-2",
+    "developer": "Mossmouth",
+    "publisher": "Mossmouth",
+    "release_date": "2020-09-29",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/418530/header.jpg",
+    "genres": [
+      "indie",
+      "action",
+      "platformer"
+    ],
+    "tags": [
+      "рогалик",
+      "сложная",
+      "процедурная",
+      "ловушки"
+    ],
+    "description": "Филигранный платформер-рогалик об исследовании смертоносных пещер Луны."
+  },
+  {
+    "title": "FTL: Faster Than Light",
+    "slug": "ftl-faster-than-light",
+    "developer": "Subset Games",
+    "publisher": "Subset Games",
+    "release_date": "2012-09-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/212680/header.jpg",
+    "genres": [
+      "indie",
+      "strategy",
+      "roguelike"
+    ],
+    "tags": [
+      "космос",
+      "корабль",
+      "тактика",
+      "сложная"
+    ],
+    "description": "Культовый симулятор управления космическим кораблем в бегстве от повстанческого флота."
+  },
+  {
+    "title": "Into the Breach",
+    "slug": "into-the-breach",
+    "developer": "Subset Games",
+    "publisher": "Subset Games",
+    "release_date": "2018-02-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/590380/header.jpg",
+    "genres": [
+      "indie",
+      "strategy"
+    ],
+    "tags": [
+      "пошаговая",
+      "тактика",
+      "мехи",
+      "пришельцы"
+    ],
+    "description": "Идеальная пошаговая тактика на сетке 8х8 о защите городов гигантскими мехами."
+  },
+  {
+    "title": "Loop Hero",
+    "slug": "loop-hero",
+    "developer": "Four Quarters",
+    "publisher": "Devolver Digital",
+    "release_date": "2021-03-04",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1306630/header.jpg",
+    "genres": [
+      "indie",
+      "rpg",
+      "roguelike"
+    ],
+    "tags": [
+      "карты",
+      "автобой",
+      "ретро",
+      "пиксели"
+    ],
+    "description": "Необычный карточный рогалик о восстановлении воспоминаний мира вокруг бесконечной петли."
+  },
+  {
+    "title": "Backpack Hero",
+    "slug": "backpack-hero",
+    "developer": "Jaspel",
+    "publisher": "IndieArk",
+    "release_date": "2023-11-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1970580/header.jpg",
+    "genres": [
+      "indie",
+      "roguelike",
+      "strategy"
+    ],
+    "tags": [
+      "инвентарь",
+      "организация",
+      "карты",
+      "тактика"
+    ],
+    "description": "Рогалик с упором на организацию предметов и синергий внутри походного рюкзака."
+  },
+  {
+    "title": "Timberborn",
+    "slug": "timberborn",
+    "developer": "Mechanistry",
+    "publisher": "Mechanistry",
+    "release_date": "2021-09-15",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1062090/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator",
+      "indie"
+    ],
+    "tags": [
+      "бобры",
+      "градострой",
+      "плотины",
+      "вода"
+    ],
+    "description": "Градостроительный симулятор умных бобров с контролем русел рек и подготовкой к засухе."
+  },
+  {
+    "title": "Farthest Frontier",
+    "slug": "farthest-frontier",
+    "developer": "Crate Entertainment",
+    "publisher": "Crate Entertainment",
+    "release_date": "2022-08-09",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1044720/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator"
+    ],
+    "tags": [
+      "градострой",
+      "средневековье",
+      "сельское-хозяйство"
+    ],
+    "description": "Детальный средневековый градостроительный симулятор на краю диких земель."
+  },
+  {
+    "title": "Dwarf Fortress",
+    "slug": "dwarf-fortress",
+    "developer": "Bay 12 Games",
+    "publisher": "Kitfox Games",
+    "release_date": "2022-12-06",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/975370/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator",
+      "indie"
+    ],
+    "tags": [
+      "дворфы",
+      "генерация",
+      "глубокая",
+      "песочница"
+    ],
+    "description": "Величайшая и сложнейшая симуляция мира и крепости дворфов с официальной графикой."
+  },
+  {
+    "title": "Prison Architect",
+    "slug": "prison-architect",
+    "developer": "Introversion",
+    "publisher": "Paradox Interactive",
+    "release_date": "2015-10-06",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/233450/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator",
+      "indie"
+    ],
+    "tags": [
+      "тюрьма",
+      "менеджмент",
+      "постройка",
+      "2D"
+    ],
+    "description": "Глубокий симулятор проектирования и управления тюрьмой строгого режима."
+  },
+  {
+    "title": "Two Point Hospital",
+    "slug": "two-point-hospital",
+    "developer": "Two Point Studios",
+    "publisher": "SEGA",
+    "release_date": "2018-08-30",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/535930/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator"
+    ],
+    "tags": [
+      "больница",
+      "юмор",
+      "менеджмент",
+      "медицина"
+    ],
+    "description": "Забавный экономический симулятор больницы с лечением необычных курьезных болезней."
+  },
+  {
+    "title": "Planet Zoo",
+    "slug": "planet-zoo",
+    "developer": "Frontier Developments",
+    "publisher": "Frontier Developments",
+    "release_date": "2019-11-05",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/703080/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator"
+    ],
+    "tags": [
+      "зоопарк",
+      "животные",
+      "строительство",
+      "дизайн"
+    ],
+    "description": "Невероятно реалистичный симулятор зоопарка с потрясающей заботой о животных."
+  },
+  {
+    "title": "Jurassic World Evolution 2",
+    "slug": "jurassic-world-evolution-2",
+    "developer": "Frontier Developments",
+    "publisher": "Frontier Developments",
+    "release_date": "2021-11-09",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1244460/header.jpg",
+    "genres": [
+      "strategy",
+      "simulator"
+    ],
+    "tags": [
+      "динозавры",
+      "парк",
+      "менеджмент",
+      "графика"
+    ],
+    "description": "Управление тематическим парком с выведением величественных динозавров Юрского периода."
+  },
+  {
+    "title": "Hardspace: Shipbreaker",
+    "slug": "hardspace-shipbreaker",
+    "developer": "Blackbird Interactive",
+    "publisher": "Focus Entertainment",
+    "release_date": "2022-05-24",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1161580/header.jpg",
+    "genres": [
+      "simulator",
+      "indie"
+    ],
+    "tags": [
+      "космос",
+      "резка",
+      "невесомость",
+      "релакс"
+    ],
+    "description": "Утилизация гигантских списанных звездолетов лазерным резаком в открытом космосе."
+  },
+  {
+    "title": "SnowRunner",
+    "slug": "snowrunner",
+    "developer": "Saber Interactive",
+    "publisher": "Focus Entertainment",
+    "release_date": "2021-05-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1465360/header.jpg",
+    "genres": [
+      "simulator"
+    ],
+    "tags": [
+      "бездорожье",
+      "грузовики",
+      "физика",
+      "грязь"
+    ],
+    "description": "Преодоление экстремального бездорожья, сугробов и болот на тяжелых вездеходах."
+  },
+  {
+    "title": "Car Mechanic Simulator 2021",
+    "slug": "car-mechanic-simulator-2021",
+    "developer": "Red Dot Games",
+    "publisher": "PlayWay",
+    "release_date": "2021-08-11",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1190000/header.jpg",
+    "genres": [
+      "simulator"
+    ],
+    "tags": [
+      "автомобили",
+      "ремонт",
+      "гараж",
+      "реализм"
+    ],
+    "description": "Детальная разборка, диагностика, тюнинг и ремонт сотен автомобильных узлов."
+  },
+  {
+    "title": "Farming Simulator 22",
+    "slug": "farming-simulator-22",
+    "developer": "GIANTS Software",
+    "publisher": "GIANTS Software",
+    "release_date": "2021-11-22",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1248130/header.jpg",
+    "genres": [
+      "simulator"
+    ],
+    "tags": [
+      "ферма",
+      "тракторы",
+      "техника",
+      "реализм"
+    ],
+    "description": "Масштабный агрономический симулятор с лицензированными комбайнами и цепочками производства."
+  },
+  {
+    "title": "Microsoft Flight Simulator",
+    "slug": "microsoft-flight-simulator",
+    "developer": "Asobo Studio",
+    "publisher": "Xbox Game Studios",
+    "release_date": "2020-08-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg",
+    "genres": [
+      "simulator"
+    ],
+    "tags": [
+      "самолеты",
+      "авиация",
+      "земля",
+      "графика"
+    ],
+    "description": "Полеты над всей планетой Земля в масштабе 1:1 с фотореалистичными погодными условиями."
+  },
+  {
+    "title": "Kerbal Space Program",
+    "slug": "kerbal-space-program",
+    "developer": "Squad",
+    "publisher": "Private Division",
+    "release_date": "2015-04-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/220200/header.jpg",
+    "genres": [
+      "simulator",
+      "indie"
+    ],
+    "tags": [
+      "космос",
+      "физика",
+      "ракеты",
+      "кербалы"
+    ],
+    "description": "Конструирование реалистичных космических ракет с учетом законов орбитальной баллистики."
+  },
+  {
+    "title": "Spore",
+    "slug": "spore",
+    "developer": "Maxis",
+    "publisher": "Electronic Arts",
+    "release_date": "2008-12-19",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/17390/header.jpg",
+    "genres": [
+      "simulator",
+      "strategy"
+    ],
+    "tags": [
+      "эволюция",
+      "существа",
+      "космос",
+      "классика"
+    ],
+    "description": "Путь от одноклеточной амебы в океане до космической цивилизации и центра галактики."
+  },
+  {
+    "title": "Black Mesa",
+    "slug": "black-mesa",
+    "developer": "Crowbar Collective",
+    "publisher": "Crowbar Collective",
+    "release_date": "2020-03-06",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/362890/header.jpg",
+    "genres": [
+      "shooter",
+      "action"
+    ],
+    "tags": [
+      "ремейк",
+      "халф-лайф",
+      "классика",
+      "сюжет"
+    ],
+    "description": "Выдающийся фанатский ремейк оригинальной Half-Life на движке Source."
+  },
+  {
+    "title": "Little Nightmares",
+    "slug": "little-nightmares",
+    "developer": "Tarsier Studios",
+    "publisher": "Bandai Namco",
+    "release_date": "2017-04-28",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/424840/header.jpg",
+    "genres": [
+      "indie",
+      "adventure",
+      "horror"
+    ],
+    "tags": [
+      "атмосфера",
+      "платформер",
+      "головоломка",
+      "жутко"
+    ],
+    "description": "Мрачная сказка о девочке в желтом дождевике Шестой, спасающейся из логова Чрева."
+  },
+  {
+    "title": "Little Nightmares II",
+    "slug": "little-nightmares-ii",
+    "developer": "Tarsier Studios",
+    "publisher": "Bandai Namco",
+    "release_date": "2021-02-11",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/860510/header.jpg",
+    "genres": [
+      "indie",
+      "adventure",
+      "horror"
+    ],
+    "tags": [
+      "атмосфера",
+      "кошмар",
+      "головоломка",
+      "кооператив"
+    ],
+    "description": "Путешествие мальчика Моно и Шестой через искаженный Сигнальной Башней Бледный Город."
+  },
+  {
+    "title": "Limbo",
+    "slug": "limbo",
+    "developer": "Playdead",
+    "publisher": "Playdead",
+    "release_date": "2011-08-02",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/48000/header.jpg",
+    "genres": [
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "черно-белая",
+      "платформер",
+      "ловушки",
+      "классика"
+    ],
+    "description": "Культовый нуарный платформер о поиске сестры в туманном краю смертельных опасностей."
+  },
+  {
+    "title": "The Stanley Parable: Ultra Deluxe",
+    "slug": "the-stanley-parable",
+    "developer": "Crows Crows Crows",
+    "publisher": "Crows Crows Crows",
+    "release_date": "2022-04-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1703340/header.jpg",
+    "genres": [
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "юмор",
+      "нарратив",
+      "мета",
+      "выбор"
+    ],
+    "description": "Остроумная философская комедия о свободе воли офисного клерка Стэнли и голосе Рассказчика."
+  },
+  {
+    "title": "Return of the Obra Dinn",
+    "slug": "return-of-the-obra-dinn",
+    "developer": "Lucas Pope",
+    "publisher": "3909",
+    "release_date": "2018-10-18",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/653530/header.jpg",
+    "genres": [
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "детектив",
+      "1-бит",
+      "загадка",
+      "расследование"
+    ],
+    "description": "Шедевральный детектив страхового инспектора о судьбе 60 членов экипажа корабля-призрака."
+  },
+  {
+    "title": "Papers, Please",
+    "slug": "papers-please",
+    "developer": "Lucas Pope",
+    "publisher": "3909",
+    "release_date": "2013-08-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/239030/header.jpg",
+    "genres": [
+      "indie"
+    ],
+    "tags": [
+      "антиутопия",
+      "документы",
+      "граница",
+      "мораль"
+    ],
+    "description": "Драматический симулятор пограничного инспектора на КПП вымышленной страны Арстотцка."
+  },
+  {
+    "title": "Suzerain",
+    "slug": "suzerain",
+    "developer": "Torpor Games",
+    "publisher": "Fellow Traveller",
+    "release_date": "2020-12-04",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1207650/header.jpg",
+    "genres": [
+      "rpg",
+      "indie",
+      "strategy"
+    ],
+    "tags": [
+      "политика",
+      "выборы",
+      "сюжет",
+      "текстовая"
+    ],
+    "description": "Глубокая политическая драма о президентстве Антона Рейна в период кризиса 1950-х годов."
+  },
+  {
+    "title": "Amnesia: The Dark Descent",
+    "slug": "amnesia-the-dark-descent",
+    "developer": "Frictional Games",
+    "publisher": "Frictional Games",
+    "release_date": "2010-09-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/57300/header.jpg",
+    "genres": [
+      "horror",
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "страх",
+      "замок",
+      "темнота",
+      "выживание"
+    ],
+    "description": "Эталон хорроров на выживание в старинном прусском замке с потерей рассудка."
+  },
+  {
+    "title": "Amnesia: The Bunker",
+    "slug": "amnesia-the-bunker",
+    "developer": "Frictional Games",
+    "publisher": "Frictional Games",
+    "release_date": "2023-06-06",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1944430/header.jpg",
+    "genres": [
+      "horror",
+      "action",
+      "adventure"
+    ],
+    "tags": [
+      "бункер",
+      "первая-мировая",
+      "монстр",
+      "выживание"
+    ],
+    "description": "Песочница ужаса в заброшенном бункере Первой мировой с постоянно преследующим Чудовищем."
+  },
+  {
+    "title": "SOMA",
+    "slug": "soma",
+    "developer": "Frictional Games",
+    "publisher": "Frictional Games",
+    "release_date": "2015-09-22",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/282140/header.jpg",
+    "genres": [
+      "horror",
+      "sci-fi",
+      "indie"
+    ],
+    "tags": [
+      "океан",
+      "сознание",
+      "сюжет",
+      "научная-фантастика"
+    ],
+    "description": "Философский научно-фантастический хоррор на дне океана о природе человеческого сознания."
+  },
+  {
+    "title": "Dead by Daylight",
+    "slug": "dead-by-daylight",
+    "developer": "Behaviour Interactive",
+    "publisher": "Behaviour",
+    "release_date": "2016-06-14",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg",
+    "genres": [
+      "horror",
+      "action"
+    ],
+    "tags": [
+      "мультиплеер",
+      "4v1",
+      "маньяк",
+      "выживание"
+    ],
+    "description": "Асимметричный мультиплеерный экшен 4 против 1, где один игрок берет на себя роль безжалостного убийцы."
+  },
+  {
+    "title": "Content Warning",
+    "slug": "content-warning",
+    "developer": "Skog",
+    "publisher": "Landfall",
+    "release_date": "2024-04-01",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2881650/header.jpg",
+    "genres": [
+      "indie",
+      "horror",
+      "action"
+    ],
+    "tags": [
+      "кооператив",
+      "юмор",
+      "видео",
+      "монстры"
+    ],
+    "description": "Кооперативная съемка жутких видеороликов с монстрами в Старом Мире ради просмотров на SpookTube."
+  },
+  {
+    "title": "Sea of Stars",
+    "slug": "sea-of-stars",
+    "developer": "Sabotage Studio",
+    "publisher": "Sabotage Studio",
+    "release_date": "2023-08-29",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1244090/header.jpg",
+    "genres": [
+      "rpg",
+      "indie"
+    ],
+    "tags": [
+      "пошаговая",
+      "пиксели",
+      "ретро",
+      "магия"
+    ],
+    "description": "Пошаговая ретро-RPG о Детях Солнцестояния в духе Chrono Trigger с потрясающим пиксель-артом."
+  },
+  {
+    "title": "Chained Echoes",
+    "slug": "chained-echoes",
+    "developer": "Matthias Linda",
+    "publisher": "Deck13",
+    "release_date": "2022-12-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/989800/header.jpg",
+    "genres": [
+      "rpg",
+      "indie"
+    ],
+    "tags": [
+      "пошаговая",
+      "пиксели",
+      "сюжет",
+      "мехи"
+    ],
+    "description": "Классическая JRPG золотого века 16-бит о драконах, магии и боевых шагоходах на континенте Валандис."
+  },
+  {
+    "title": "Neon White",
+    "slug": "neon-white",
+    "developer": "Angel Matrix",
+    "publisher": "Annapurna Interactive",
+    "release_date": "2022-06-16",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1533420/header.jpg",
+    "genres": [
+      "action",
+      "indie"
+    ],
+    "tags": [
+      "скорость",
+      "паркур",
+      "карты",
+      "спидран"
+    ],
+    "description": "Молниеносный экшен от первого лица об истреблении демонов в Небесах при помощи карточных способностей."
+  },
+  {
+    "title": "DUSK",
+    "slug": "dusk",
+    "developer": "David Szymanski",
+    "publisher": "New Blood",
+    "release_date": "2018-12-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/519860/header.jpg",
+    "genres": [
+      "shooter",
+      "action",
+      "indie"
+    ],
+    "tags": [
+      "ретро",
+      "бумер-шутер",
+      "атмосфера",
+      "мясо"
+    ],
+    "description": "Мрачный олдскульный шутер в стиле Quake и Blood с распрыжками и двустволками."
+  },
+  {
+    "title": "Rain World",
+    "slug": "rain-world",
+    "developer": "Videocult",
+    "publisher": "Akupara Games",
+    "release_date": "2017-03-28",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/312520/header.jpg",
+    "genres": [
+      "indie",
+      "action",
+      "survival"
+    ],
+    "tags": [
+      "экосистема",
+      "платформер",
+      "сложная",
+      "атмосфера"
+    ],
+    "description": "Выживание маленького слизнекота в разрушенном мире с умнейшим поведением хищников."
+  },
+  {
+    "title": "Ghostrunner",
+    "slug": "ghostrunner",
+    "developer": "One More Level",
+    "publisher": "505 Games",
+    "release_date": "2020-10-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1220140/header.jpg",
+    "genres": [
+      "action"
+    ],
+    "tags": [
+      "киберпанк",
+      "паркур",
+      "катана",
+      "динамика"
+    ],
+    "description": "Хардкорный слэшер от первого лица в киберпанковой башне Дхарма со смертью от одного удара."
+  },
+  {
+    "title": "Armored Core VI Fires of Rubicon",
+    "slug": "armored-core-vi",
+    "developer": "FromSoftware",
+    "publisher": "Bandai Namco",
+    "release_date": "2023-08-25",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1888160/header.jpg",
+    "genres": [
+      "action",
+      "sci-fi"
+    ],
+    "tags": [
+      "мехи",
+      "кастомизация",
+      "боссы",
+      "сложная"
+    ],
+    "description": "Высокоскоростной экшен о битвах гигантских кастомизируемых мехов на планете Рубикон-3."
+  },
+  {
+    "title": "Remnant II",
+    "slug": "remnant-ii",
+    "developer": "Gunfire Games",
+    "publisher": "Gearbox Publishing",
+    "release_date": "2023-07-25",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1282100/header.jpg",
+    "genres": [
+      "action",
+      "rpg",
+      "shooter"
+    ],
+    "tags": [
+      "соулслайк",
+      "кооператив",
+      "процедурная",
+      "боссы"
+    ],
+    "description": "Шутерный соулслайк с исследованием диковинных миров и сражениями с чудовищными боссами."
+  },
+  {
+    "title": "Dredge",
+    "slug": "dredge",
+    "developer": "Black Salt Games",
+    "publisher": "Team17",
+    "release_date": "2023-03-30",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1562420/header.jpg",
+    "genres": [
+      "indie",
+      "rpg",
+      "adventure"
+    ],
+    "tags": [
+      "рыбалка",
+      "лавкрафт",
+      "океан",
+      "атмосфера"
+    ],
+    "description": "Одиночная рыболовная игра с лавкрафтовскими тайнами и исследованием архипелага."
+  },
+  {
+    "title": "Dave the Diver",
+    "slug": "dave-the-diver",
+    "developer": "MINTROCKET",
+    "publisher": "MINTROCKET",
+    "release_date": "2023-06-28",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1868140/header.jpg",
+    "genres": [
+      "indie",
+      "rpg",
+      "simulator"
+    ],
+    "tags": [
+      "дайвинг",
+      "суши-бар",
+      "юмор",
+      "релакс"
+    ],
+    "description": "Днем вы исследуете Синий Омут с гарпуном, а вечером управляете оживленным суши-рестораном."
+  },
+  {
+    "title": "Cocoon",
+    "slug": "cocoon",
+    "developer": "Geometric Interactive",
+    "publisher": "Annapurna Interactive",
+    "release_date": "2023-09-29",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1497440/header.jpg",
+    "genres": [
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "головоломка",
+      "миры",
+      "дизайн",
+      "гениально"
+    ],
+    "description": "Головоломка от ведущего геймдизайнера Limbo с прыжками между сферическими мирами внутри миров."
+  },
+  {
+    "title": "Assetto Corsa",
+    "slug": "assetto-corsa",
+    "developer": "Kunos Simulazioni",
+    "publisher": "505 Games",
+    "release_date": "2014-12-19",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/244210/header.jpg",
+    "genres": [
+      "simulator"
+    ],
+    "tags": [
+      "гонки",
+      "автосимулятор",
+      "реализм",
+      "физика"
+    ],
+    "description": "Признанный автосимулятор с лазерным сканированием треков и непревзойденной поддержкой рулей."
+  },
+  {
+    "title": "Green Hell",
+    "slug": "green-hell",
+    "developer": "Creepy Jar",
+    "publisher": "Creepy Jar",
+    "release_date": "2019-09-05",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/815370/header.jpg",
+    "genres": [
+      "survival",
+      "indie"
+    ],
+    "tags": [
+      "джунгли",
+      "амазонка",
+      "реализм",
+      "выживание"
+    ],
+    "description": "Реалистичное выживание в неизведанных джунглях Амазонки с контролем физического и душевного здоровья."
+  },
+  {
+    "title": "Core Keeper",
+    "slug": "core-keeper",
+    "developer": "Pugstorm",
+    "publisher": "Fireshine Games",
+    "release_date": "2024-08-27",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1621690/header.jpg",
+    "genres": [
+      "indie",
+      "survival",
+      "rpg"
+    ],
+    "tags": [
+      "песочница",
+      "кооператив",
+      "пиксели",
+      "боссы"
+    ],
+    "description": "Кооперативная подземная песочница с добычей реликвий, сельским хозяйством и древним Ядром."
+  },
+  {
+    "title": "Slime Rancher",
+    "slug": "slime-rancher",
+    "developer": "Monomi Park",
+    "publisher": "Monomi Park",
+    "release_date": "2017-08-01",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/433340/header.jpg",
+    "genres": [
+      "indie",
+      "adventure",
+      "simulator"
+    ],
+    "tags": [
+      "слизни",
+      "ферма",
+      "мило",
+      "уютная"
+    ],
+    "description": "Красочное приключение на Далеком-Далеком Угодье с разведением прыгучих желеобразных слаймов."
+  },
+  {
+    "title": "A Way Out",
+    "slug": "a-way-out",
+    "developer": "Hazelight",
+    "publisher": "Electronic Arts",
+    "release_date": "2018-03-23",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1222700/header.jpg",
+    "genres": [
+      "action",
+      "adventure"
+    ],
+    "tags": [
+      "кооператив",
+      "побег-из-тюрьмы",
+      "сюжет",
+      "кинематографично"
+    ],
+    "description": "Кинематографичный кооперативный побег двух заключенных Лео и Винсента."
+  },
+  {
+    "title": "Human: Fall Flat",
+    "slug": "human-fall-flat",
+    "developer": "No Brakes Games",
+    "publisher": "Curve Games",
+    "release_date": "2016-07-22",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/477160/header.jpg",
+    "genres": [
+      "indie",
+      "action",
+      "simulator"
+    ],
+    "tags": [
+      "физика",
+      "кооператив",
+      "юмор",
+      "головоломка"
+    ],
+    "description": "Уморительный физический платформер в плывущих снах с пластилиновыми человечками."
+  },
+  {
+    "title": "Party Animals",
+    "slug": "party-animals",
+    "developer": "Recreate Games",
+    "publisher": "Source Technology",
+    "release_date": "2023-09-20",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/1260320/header.jpg",
+    "genres": [
+      "action",
+      "indie"
+    ],
+    "tags": [
+      "вечеринка",
+      "животные",
+      "физика",
+      "драки"
+    ],
+    "description": "Веселые потасовки забавных щенков, котят и утят с забавной ragdoll-физикой."
+  },
+  {
+    "title": "We Were Here Together",
+    "slug": "we-were-here-together",
+    "developer": "Total Mayhem Games",
+    "publisher": "Total Mayhem Games",
+    "release_date": "2019-10-10",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/865360/header.jpg",
+    "genres": [
+      "indie",
+      "adventure"
+    ],
+    "tags": [
+      "кооператив",
+      "рация",
+      "головоломка",
+      "снег"
+    ],
+    "description": "Головоломка для двоих исследователей Антарктики со связью исключительно по рации."
+  },
+  {
+    "title": "Keep Talking and Nobody Explodes",
+    "slug": "keep-talking-and-nobody-explodes",
+    "developer": "Steel Crate Games",
+    "publisher": "Steel Crate Games",
+    "release_date": "2015-10-08",
+    "platforms": "PC, PlayStation, Xbox",
+    "image_url": "https://shared.steamstatic.com/store_item_assets/steam/apps/341800/header.jpg",
+    "genres": [
+      "indie"
+    ],
+    "tags": [
+      "кооператив",
+      "бомба",
+      "мануал",
+      "напряжение"
+    ],
+    "description": "Один игрок обезвреживает тикающую бомбу, а друзья читают инструкции из реального печатного мануала."
+  }
+]
