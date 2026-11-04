@@ -1,69 +1,23 @@
-<div class="max-w-md mx-auto my-6">
-  <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
-    <div class="text-center mb-6">
-      <div class="w-10 h-10 mx-auto rounded-xl bg-indigo-600 flex items-center justify-center text-white text-base shadow-sm mb-3">
-        <i class="fa-solid fa-right-to-bracket"></i>
-      </div>
-      <h1 class="text-xl font-bold text-white tracking-tight">Вход в систему</h1>
-      <p class="text-xs text-slate-400 mt-1">Авторизуйтесь для доступа к рекомендациям</p>
-    </div>
-
-    <%= form_with url: session_path, method: :post, class: "space-y-4", id: "login_form" do |f| %>
-      <div>
-        <label class="block text-xs font-medium text-slate-300 mb-1">Email</label>
-        <%= f.email_field :email_address, id: "login_email", required: true, autofocus: true, autocomplete: "username", placeholder: "alex@example.com",
-            class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" %>
-      </div>
-
-      <div>
-        <div class="flex items-center justify-between mb-1">
-          <label class="block text-xs font-medium text-slate-300">Пароль</label>
-        </div>
-        <%= f.password_field :password, id: "login_password", required: true, autocomplete: "current-password", placeholder: "••••••••",
-            class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" %>
-      </div>
-
-      <div class="pt-1">
-        <%= f.submit "Войти", class: "w-full py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-colors cursor-pointer shadow-sm" %>
-      </div>
+<div class="auth-wrap">
+  <section class="auth-panel">
+    <div class="auth-head"><p class="eyebrow">С возвращением</p><h1>Вход в GamePulse</h1><p>Ваша игровая история и подборки на месте</p></div>
+    <%= form_with url: session_path, method: :post, class: "form-stack", id: "login_form" do |f| %>
+      <div class="field"><label>Email</label><%= f.email_field :email_address, id: "login_email", required: true, autofocus: true, autocomplete: "username", placeholder: "alex@example.com", class: "input" %></div>
+      <div class="field"><label>Пароль</label><%= f.password_field :password, id: "login_password", required: true, autocomplete: "current-password", placeholder: "Ваш пароль", class: "input" %></div>
+      <%= f.submit "Войти", class: "button button-primary" %>
     <% end %>
-
-    <!-- Test Accounts Quick Fill -->
-    <div class="mt-6 pt-5 border-t border-slate-800">
-      <div class="text-xs font-medium text-slate-400 mb-2.5 flex items-center gap-1.5">
-        <i class="fa-solid fa-users text-indigo-400"></i>
-        Демо-профили для быстрой проверки:
-      </div>
-      <div class="grid grid-cols-2 gap-2 text-xs">
-        <button type="button" onclick="fillLogin('alex@example.com', 'password123')" class="p-2.5 rounded-lg bg-slate-850 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-left transition-colors cursor-pointer">
-          <div class="font-medium text-indigo-300">Александр (RPG)</div>
-          <div class="text-[10px] text-slate-500 mt-0.5">Ведьмак 3, Cyberpunk</div>
-        </button>
-
-        <button type="button" onclick="fillLogin('elena@example.com', 'password123')" class="p-2.5 rounded-lg bg-slate-850 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-left transition-colors cursor-pointer">
-          <div class="font-medium text-indigo-300">Елена (Инди)</div>
-          <div class="text-[10px] text-slate-500 mt-0.5">Hades, Hollow Knight</div>
-        </button>
-
-        <button type="button" onclick="fillLogin('dmitry@example.com', 'password123')" class="p-2.5 rounded-lg bg-slate-850 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-left transition-colors cursor-pointer">
-          <div class="font-medium text-amber-300">Дмитрий (Экшен)</div>
-          <div class="text-[10px] text-slate-500 mt-0.5">Elden Ring, DOOM</div>
-        </button>
-
-        <button type="button" onclick="fillLogin('artem@example.com', 'password123')" class="p-2.5 rounded-lg bg-slate-850 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-left transition-colors cursor-pointer">
-          <div class="font-medium text-emerald-300">Артем (Стратег)</div>
-          <div class="text-[10px] text-slate-500 mt-0.5">Цивилизация 6, BG3</div>
-        </button>
+    <div class="auth-foot" style="text-align:left">
+      <p style="margin-bottom:12px">Быстрый вход с демо-профилем</p>
+      <div class="demo-list">
+        <button type="button" onclick="fillLogin('alex@example.com', 'password123')" class="demo-button"><strong>Александр</strong><span>RPG и открытые миры</span></button>
+        <button type="button" onclick="fillLogin('elena@example.com', 'password123')" class="demo-button"><strong>Елена</strong><span>Инди и атмосферные игры</span></button>
+        <button type="button" onclick="fillLogin('dmitry@example.com', 'password123')" class="demo-button"><strong>Дмитрий</strong><span>Экшен и сложные боссы</span></button>
+        <button type="button" onclick="fillLogin('artem@example.com', 'password123')" class="demo-button"><strong>Артем</strong><span>Стратегии и тактика</span></button>
       </div>
     </div>
-
-    <div class="mt-5 pt-4 border-t border-slate-800 text-center text-xs text-slate-400">
-      Нет аккаунта?
-      <a href="/registration/new" class="text-indigo-400 hover:text-indigo-300 font-medium ml-1">Зарегистрироваться</a>
-    </div>
-  </div>
+    <p class="auth-foot">Впервые здесь? <a href="/registration/new">Создать аккаунт</a></p>
+  </section>
 </div>
-
 <script>
   function fillLogin(email, password) {
     document.getElementById('login_email').value = email;

@@ -1,151 +1,88 @@
 <!DOCTYPE html>
-<html lang="ru" class="dark">
+<html lang="ru">
   <head>
     <title><%= content_for(:title) || "GamePulse — Рекомендательная система игр" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                50: '#f5f3ff',
-                100: '#ede9fe',
-                500: '#8b5cf6',
-                600: '#7c3aed',
-                700: '#6d28d9',
-                800: '#5b21b6',
-                900: '#4c1d95',
-              }
-            }
-          }
-        }
-      }
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-indigo-600 selection:text-white antialiased">
-    <!-- Navigation Bar -->
-    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
-        
-        <!-- Logo & Navigation Links -->
-        <div class="flex items-center gap-6 sm:gap-8">
-          <a href="/" class="flex items-center gap-2.5 group">
-            <div class="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center text-white shadow-sm transition-transform group-hover:scale-105">
-              <i class="fa-solid fa-gamepad text-base"></i>
-            </div>
-            <span class="text-lg font-bold tracking-tight text-white group-hover:text-indigo-400 transition-colors">GamePulse</span>
-          </a>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a href="/" class="brand" aria-label="GamePulse — на главную">
+          <svg class="brand-mark" viewBox="0 0 28 20" fill="none" aria-hidden="true"><path d="M8 4h12c3 0 5 2 6 5l1 5c1 4-3 5-5 3l-4-4h-8l-4 4c-2 2-6 1-5-3l1-5c1-3 3-5 6-5Z" stroke="currentColor" stroke-width="1.5"/><path d="M8 7v5M5.5 9.5h5M20 8h.01M23 11h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>GamePulse</span>
+        </a>
 
-          <!-- Main Nav Tabs -->
-          <nav class="hidden md:flex items-center gap-1.5">
-            <a href="/" class="px-3 py-1.5 text-sm font-medium rounded-lg transition-colors flex items-center gap-2 <%= (request.path == '/' || (request.path == '/games' && params[:tab] != 'recommended')) ? 'bg-slate-800 text-white' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-850' %>">
-              <i class="fa-solid fa-shapes text-indigo-400 text-xs"></i> Каталог
-            </a>
-            <a href="/recommendations" class="px-3 py-1.5 text-sm font-medium rounded-lg transition-colors flex items-center gap-2 <%= request.path.start_with?('/recommendations') ? 'bg-indigo-600/20 text-indigo-300 border border-indigo-500/30' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-850' %>">
-              <i class="fa-solid fa-wand-magic-sparkles text-amber-400 text-xs"></i> Рекомендации
-            </a>
-          </nav>
-        </div>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="/" class="nav-link <%= 'active' if request.path == '/' || request.path == '/games' %>">Каталог</a>
+          <a href="/recommendations" class="nav-link <%= 'active' if request.path.start_with?('/recommendations') %>">Для вас</a>
+        </nav>
 
-        <!-- Search Bar -->
-        <div class="flex-1 max-w-sm hidden sm:block">
-          <form action="/games" method="get" class="relative">
-            <input type="text" name="q" value="<%= params[:q] %>" placeholder="Поиск игры или жанра..." 
-                   class="w-full bg-slate-900 text-sm text-slate-200 placeholder-slate-500 rounded-lg pl-9 pr-3.5 py-1.5 border border-slate-800 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors">
-            <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-500 text-xs"></i>
-          </form>
-        </div>
+        <form action="/games" method="get" class="header-search" role="search">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input type="search" name="q" value="<%= params[:q] %>" placeholder="Найти игру" aria-label="Найти игру">
+        </form>
 
-        <!-- Auth Controls -->
-        <div class="flex items-center gap-2.5">
+        <div class="account-controls">
           <% if authenticated? %>
-            <div class="flex items-center gap-2.5">
-              <a href="/profile" class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-slate-850 hover:bg-slate-800 border border-slate-800 text-xs sm:text-sm text-slate-200 transition-colors">
-                <% if current_user.avatar_image_url.present? %>
-                  <img src="<%= current_user.avatar_image_url %>" alt="<%= current_user.display_name %>" class="w-6 h-6 rounded-md object-cover">
-                <% else %>
-                  <div class="w-6 h-6 rounded-md bg-indigo-600 flex items-center justify-center font-bold text-xs text-white">
-                    <%= current_user.display_name.first.upcase rescue "U" %>
-                  </div>
-                <% end %>
-                <span class="font-medium hidden sm:inline"><%= current_user.display_name %></span>
-              </a>
-
-              <%= button_to session_path, method: :delete, class: "p-2 rounded-lg text-slate-400 hover:text-rose-400 hover:bg-slate-800 transition-colors text-sm", title: "Выйти" do %>
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="/profile" class="profile-link <%= 'active' if request.path.start_with?('/profile') %>">
+              <% if current_user.avatar_image_url.present? %>
+                <img src="<%= current_user.avatar_image_url %>" alt="" class="avatar avatar-small">
+              <% else %>
+                <span class="avatar avatar-small avatar-fallback"><%= current_user.display_name.first.upcase rescue "U" %></span>
               <% end %>
-            </div>
+              <span class="profile-name"><%= current_user.display_name %></span>
+            </a>
+            <%= button_to session_path, method: :delete, class: "icon-button", title: "Выйти", "aria-label": "Выйти" do %>
+              <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+            <% end %>
           <% else %>
-            <div class="flex items-center gap-2">
-              <a href="/session/new" class="px-3 py-1.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg transition-colors">
-                Войти
-              </a>
-              <a href="/registration/new" class="px-3.5 py-1.5 text-sm font-medium bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg shadow-sm transition-colors">
-                Регистрация
-              </a>
-            </div>
+            <a href="/session/new" class="text-link">Войти</a>
+            <a href="/registration/new" class="button button-primary button-small">Регистрация</a>
           <% end %>
         </div>
-
       </div>
     </header>
 
-    <!-- Flash notifications -->
-    <% if notice.present? %>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 w-full">
-        <div class="bg-emerald-950/80 border border-emerald-700/60 text-emerald-200 px-4 py-3 rounded-xl flex items-center justify-between text-sm shadow-lg">
-          <div class="flex items-center gap-2.5">
-            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+    <% if notice.present? || alert.present? %>
+      <div class="shell flash-wrap">
+        <% if notice.present? %>
+          <div class="flash flash-notice" role="status">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
             <span><%= notice %></span>
+            <button onclick="this.parentElement.remove()" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
           </div>
-          <button onclick="this.parentElement.remove()" class="text-emerald-400 hover:text-emerald-200 text-xs">✕</button>
-        </div>
-      </div>
-    <% end %>
-
-    <% if alert.present? %>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 w-full">
-        <div class="bg-rose-950/80 border border-rose-700/60 text-rose-200 px-4 py-3 rounded-xl flex items-center justify-between text-sm shadow-lg">
-          <div class="flex items-center gap-2.5">
-            <i class="fa-solid fa-triangle-exclamation text-rose-400"></i>
+        <% end %>
+        <% if alert.present? %>
+          <div class="flash flash-alert" role="alert">
+            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
             <span><%= alert %></span>
+            <button onclick="this.parentElement.remove()" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
           </div>
-          <button onclick="this.parentElement.remove()" class="text-rose-400 hover:text-rose-200 text-xs">✕</button>
-        </div>
+        <% end %>
       </div>
     <% end %>
 
-    <!-- Main Content -->
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <%= yield %>
-    </main>
+    <main class="shell main-content"><%= yield %></main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 border-t border-slate-800 mt-16 py-8 text-slate-400 text-xs">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-3">
-          <span class="font-bold text-slate-200 text-sm">GamePulse</span>
-          <span>•</span>
-          <span>Рекомендательная система видеоигр</span>
-        </div>
-        <div class="flex items-center gap-4 text-xs">
-          <a href="/" class="hover:text-slate-200 transition-colors">Каталог</a>
-          <a href="/recommendations" class="hover:text-slate-200 transition-colors">Рекомендации</a>
-          <a href="https://github.com/valera-asyao/GamePulse" target="_blank" rel="noopener noreferrer" class="hover:text-slate-200 transition-colors flex items-center gap-1">
-            <i class="fa-brands fa-github"></i> GitHub
-          </a>
-        </div>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div><span class="footer-brand">GamePulse</span><span>Игры, которые подходят именно вам</span></div>
+        <nav aria-label="Навигация в подвале">
+          <a href="/">Каталог</a>
+          <a href="/recommendations">Для вас</a>
+          <a href="https://github.com/valera-asyao/GamePulse" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </nav>
       </div>
     </footer>
   </body>

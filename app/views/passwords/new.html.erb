@@ -1,8 +1,7 @@
-<h1>Forgot your password?</h1>
-
-<%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-
-<%= form_with url: passwords_path do |form| %>
-  <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:email_address] %><br>
-  <%= form.submit "Email reset instructions" %>
-<% end %>
+<div class="auth-wrap"><section class="auth-panel">
+  <div class="auth-head"><p class="eyebrow">Восстановление доступа</p><h1>Забыли пароль?</h1><p>Отправим инструкцию на вашу почту</p></div>
+  <%= form_with url: passwords_path, class: "form-stack" do |form| %>
+    <div class="field"><label>Email</label><%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "gamer@example.com", value: params[:email_address], class: "input" %></div>
+    <%= form.submit "Отправить инструкцию", class: "button button-primary" %>
+  <% end %>
+</section></div>

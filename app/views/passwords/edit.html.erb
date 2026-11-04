@@ -1,9 +1,8 @@
-<h1>Update your password</h1>
-
-<%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-
-<%= form_with url: password_path(params[:token]), method: :put do |form| %>
-  <%= form.password_field :password, required: true, autocomplete: "new-password", placeholder: "Enter new password", maxlength: 72 %><br>
-  <%= form.password_field :password_confirmation, required: true, autocomplete: "new-password", placeholder: "Repeat new password", maxlength: 72 %><br>
-  <%= form.submit "Save" %>
-<% end %>
+<div class="auth-wrap"><section class="auth-panel">
+  <div class="auth-head"><p class="eyebrow">Новый пароль</p><h1>Обновить доступ</h1><p>Придумайте новый пароль для профиля</p></div>
+  <%= form_with url: password_path(params[:token]), method: :put, class: "form-stack" do |form| %>
+    <div class="field"><label>Новый пароль</label><%= form.password_field :password, required: true, autocomplete: "new-password", maxlength: 72, class: "input" %></div>
+    <div class="field"><label>Повторите пароль</label><%= form.password_field :password_confirmation, required: true, autocomplete: "new-password", maxlength: 72, class: "input" %></div>
+    <%= form.submit "Сохранить пароль", class: "button button-primary" %>
+  <% end %>
+</section></div>

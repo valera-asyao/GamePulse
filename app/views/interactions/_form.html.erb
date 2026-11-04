@@ -1,92 +1,35 @@
-<div id="game_interaction_<%= game.id %>" class="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-sm">
+<aside id="game_interaction_<%= game.id %>" class="interaction-panel">
   <% if authenticated? %>
     <% interaction ||= current_user.interactions.find_or_initialize_by(game: game) %>
-    <%= form_with model: interaction, url: game_interaction_path(game), method: (interaction.persisted? ? :patch : :post), class: "space-y-4" do |f| %>
-      <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-        <h3 class="font-semibold text-white text-xs uppercase tracking-wider flex items-center gap-2">
-          <i class="fa-solid fa-gamepad text-indigo-400"></i>
-          Ваш игровой опыт
-        </h3>
-        <% if interaction.persisted? %>
-          <span class="text-[10px] text-emerald-400 font-medium px-2 py-0.5 rounded-md bg-emerald-950/60 border border-emerald-800/80">
-            Сохранено
-          </span>
-        <% end %>
-      </div>
-
-      <!-- Rating (1-10) -->
-      <div>
-        <label class="block text-xs font-medium text-slate-300 mb-1.5">
-          Ваша оценка (1-10):
-          <span class="text-indigo-400 font-bold ml-1" id="rating_val_<%= game.id %>"><%= interaction.rating || "—" %></span>
-        </label>
-        <div class="grid grid-cols-10 gap-1 sm:gap-1.5">
+    <h2>Ваш игровой опыт</h2>
+    <%= form_with model: interaction, url: game_interaction_path(game), method: (interaction.persisted? ? :patch : :post), class: "form-stack" do |f| %>
+      <div class="field">
+        <label>Ваша оценка · <span id="rating_val_<%= game.id %>"><%= interaction.rating || "—" %></span>/10</label>
+        <div class="rating-scale">
           <% (1..10).each do |num| %>
-            <label class="cursor-pointer">
+            <label>
               <%= f.radio_button :rating, num, class: "peer sr-only", onchange: "document.getElementById('rating_val_#{game.id}').innerText = '#{num}'" %>
-              <div class="h-8 rounded-md flex items-center justify-center text-xs font-semibold transition-colors
-                          peer-checked:bg-indigo-600 peer-checked:text-white
-                          bg-slate-800 hover:bg-slate-750 text-slate-300">
-                <%= num %>
-              </div>
+              <span class="rating-option"><%= num %></span>
             </label>
           <% end %>
         </div>
       </div>
-
-      <!-- Quick Toggles: Like & Favorite -->
-      <div class="grid grid-cols-2 gap-2.5">
-        <label class="flex items-center gap-2 p-2 rounded-lg bg-slate-800 hover:bg-slate-750 cursor-pointer border border-slate-700/80 transition-colors">
-          <%= f.check_box :liked, class: "rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 bg-slate-900" %>
-          <span class="text-xs font-medium text-slate-200 flex items-center gap-1.5">
-            <i class="fa-solid fa-heart text-rose-500 text-xs"></i> Нравится
-          </span>
-        </label>
-
-        <label class="flex items-center gap-2 p-2 rounded-lg bg-slate-800 hover:bg-slate-750 cursor-pointer border border-slate-700/80 transition-colors">
-          <%= f.check_box :favorite, class: "rounded border-slate-600 text-amber-500 focus:ring-amber-500 bg-slate-900" %>
-          <span class="text-xs font-medium text-slate-200 flex items-center gap-1.5">
-            <i class="fa-solid fa-star text-amber-400 text-xs"></i> В избранное
-          </span>
-        </label>
+      <div class="toggle-grid">
+        <label class="toggle"><%= f.check_box :liked %> Нравится</label>
+        <label class="toggle"><%= f.check_box :favorite %> В избранное</label>
       </div>
-
-      <!-- Status & Hours Played -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-        <div>
-          <label class="block text-[11px] font-medium text-slate-400 mb-1">Статус прохождения</label>
-          <%= f.select :status, [
-            ["Не указано", "none"],
-            ["Хочу сыграть", "want_to_play"],
-            ["Сейчас играю", "playing"],
-            ["Пройдено", "completed"],
-            ["Заброшено", "dropped"]
-          ], {}, class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-indigo-500" %>
+      <div class="form-grid">
+        <div class="field">
+          <label>Статус</label>
+          <%= f.select :status, [["Не указано", "none"],["Хочу сыграть", "want_to_play"],["Сейчас играю", "playing"],["Пройдено", "completed"],["Заброшено", "dropped"]], {}, class: "input" %>
         </div>
-
-        <div>
-          <label class="block text-[11px] font-medium text-slate-400 mb-1">Часов наиграно</label>
-          <%= f.number_field :hours_played, min: 0, placeholder: "0",
-              class: "w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-indigo-500" %>
-        </div>
+        <div class="field"><label>Часов сыграно</label><%= f.number_field :hours_played, min: 0, placeholder: "0", class: "input" %></div>
       </div>
-
-      <!-- Submit Button -->
-      <div class="pt-1">
-        <%= f.submit "Сохранить и обновить рекомендации", class: "w-full py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs shadow-sm cursor-pointer transition-colors" %>
-      </div>
+      <%= f.submit interaction.persisted? ? "Сохранить изменения" : "Сохранить оценку", class: "button button-primary" %>
     <% end %>
   <% else %>
-    <div class="text-center py-4">
-      <i class="fa-solid fa-lock text-slate-500 text-xl mb-2"></i>
-      <h4 class="text-sm font-semibold text-white">Оценить игру</h4>
-      <p class="text-xs text-slate-400 mt-1 max-w-xs mx-auto">
-        Войдите в аккаунт, чтобы поставить оценку, добавить в избранное и получить рекомендации.
-      </p>
-      <div class="mt-3.5 flex justify-center gap-2">
-        <a href="/session/new" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-medium text-slate-200 transition-colors">Войти</a>
-        <a href="/registration/new" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-medium text-white transition-colors">Регистрация</a>
-      </div>
-    </div>
+    <h2>Была ли игра вашей?</h2>
+    <p class="lead">Войдите, чтобы оценить игру и улучшить свою подборку</p>
+    <div class="actions"><a href="/session/new" class="button button-primary">Войти</a><a href="/registration/new" class="button button-secondary">Регистрация</a></div>
   <% end %>
-</div>
+</aside>
