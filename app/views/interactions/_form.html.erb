@@ -25,7 +25,6 @@
         </div>
         <div class="field"><label>Часов сыграно</label><%= f.number_field :hours_played, min: 0, placeholder: "0", class: "input" %></div>
       </div>
-      <div class="interaction-cover"><img src="<%= game.image_url %>" alt="Обложка <%= game.title %>" loading="lazy"></div>
       <%= f.submit interaction.persisted? ? "Сохранить изменения" : "Сохранить оценку", class: "button button-primary" %>
     <% end %>
   <% else %>
