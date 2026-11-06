@@ -172,7 +172,7 @@ body h3 { font-weight: 500; }
 .detail-meta span { display: block; color: var(--muted); font-size: 11px; margin-bottom: 4px; }
 .detail-meta strong { font-weight: 500; font-size: 13px; }
 .detail-description { max-width: 720px; color: var(--secondary); font-size: 15px; line-height: 1.8; }
-.detail-cover { position: relative; aspect-ratio: 460/215; margin-bottom: 20px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: #0b0d0c; }
+.detail-cover { position: relative; aspect-ratio: 460/215; max-width: 560px; margin-bottom: 20px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: #0b0d0c; }
 .detail-cover img { width: 100%; height: 100%; object-fit: cover; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .tag { color: var(--muted); font-size: 12px; }
