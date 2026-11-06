@@ -107,15 +107,16 @@ class UserFlowsTest < ActionDispatch::IntegrationTest
     assert_response :unprocessable_entity
   end
 
-  # Ответвление 4: невалидная оценка игры — ошибка, взаимодействие не сохраняется
-  test "оценка вне диапазона отклоняется" do
+  # Ответвление 4: невалидное число часов (больше 30000) — ошибка, взаимодействие не сохраняется
+  test "часы игры больше 30000 отклоняются" do
     sign_in_as @user
 
     assert_no_difference("Interaction.count") do
-      post game_interaction_url(@game), params: { interaction: { rating: 99 } }
+      post game_interaction_url(@game), params: { interaction: { hours_played: 30_001 } }
     end
     assert_redirected_to game_url(@game)
     follow_redirect!
     assert_match "Не удалось сохранить изменения", response.body
   end
+
 end
