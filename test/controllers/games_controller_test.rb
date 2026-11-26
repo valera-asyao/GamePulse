@@ -35,6 +35,19 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test "only signed in visitors subscribe to live likes" do
+    target = ActionView::RecordIdentifier.dom_id(@game, :likes_count)
+    get game_url(@game)
+    assert_select "strong##{target}", text: "0"
+    assert_select "turbo-cable-stream-source", count: 0
+    assert_select "turbo-frame", count: 0
+
+    post session_url, params: { email_address: @user.email_address, password: "password" }
+    get game_url(@game)
+    assert_select "turbo-cable-stream-source[channel='Turbo::StreamsChannel']", count: 1
+    assert_select "turbo-frame#game_interaction_#{@game.id} form", count: 1
+  end
+
   test "should get recommended tab when unauthenticated" do
     get games_url(tab: "recommended")
     assert_response :success

@@ -44,7 +44,8 @@ class InteractionsController < ApplicationController
     else
       respond_to do |format|
         format.turbo_stream do
-          render turbo_stream: turbo_stream.replace("game_interaction_#{@game.id}", partial: "interactions/form", locals: { game: @game, interaction: @interaction })
+          render turbo_stream: turbo_stream.replace("game_interaction_#{@game.id}", partial: "interactions/form", locals: { game: @game, interaction: @interaction }),
+                 status: :unprocessable_content
         end
         format.html { redirect_to @game, alert: "Не удалось сохранить изменения." }
       end

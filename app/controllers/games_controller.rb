@@ -78,7 +78,7 @@ class GamesController < ApplicationController
     @game = Game.find_by!(slug: params[:id])
     @game.increment!(:views_count, touch: false)
 
-    if current_user
+    if authenticated?
       @interaction = current_user.interactions.find_or_initialize_by(game: @game)
     end
 

@@ -36,6 +36,10 @@ class Game < ApplicationRecord
     end
   end
 
+  def likes_count
+    interactions.where(liked: true).count
+  end
+
   def update_metrics!
     valid_ratings = interactions.where.not(rating: nil).pluck(:rating)
     count = valid_ratings.size
@@ -46,7 +50,6 @@ class Game < ApplicationRecord
           end
 
     display_count = count > 0 ? count : (steam_reviews_count.to_i)
-    likes_count = interactions.where(liked: true).count
     favorites_count = interactions.where(favorite: true).count
 
     # Popularity formula: weighted sum of views, ratings, likes, and favorites

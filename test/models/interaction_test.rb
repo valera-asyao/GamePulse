@@ -1,7 +1,9 @@
 require "test_helper"
+require "turbo/broadcastable/test_helper"
 
 class InteractionTest < ActiveSupport::TestCase
   include ActiveJob::TestHelper
+  include Turbo::Broadcastable::TestHelper
 
   setup do
     @user = User.create!(email_address: "interuser@test.com", username: "interuser", password: "password123")
@@ -28,6 +30,29 @@ class InteractionTest < ActiveSupport::TestCase
     @game.reload
     assert_equal 0, @game.ratings_count
     assert_equal 0.0, @game.average_rating
+  end
+
+  test "changing a like broadcasts the current count for its game" do
+    other_game = Game.create!(title: "Another Game")
+    assert_no_turbo_stream_broadcasts [ other_game, :likes ] do
+      assert_turbo_stream_broadcasts [ @game, :likes ], count: 1 do
+        @interaction = Interaction.create!(user: @user, game: @game, liked: true)
+      end
+    end
+
+    assert_turbo_stream_broadcasts [ @game, :likes ], count: 0 do
+      @interaction.update!(rating: 8)
+    end
+
+    target = ActionView::RecordIdentifier.dom_id(@game, :likes_count)
+    streams = capture_turbo_stream_broadcasts([ @game, :likes ]) do
+      @interaction.update!(liked: false)
+      @interaction.update!(liked: true)
+      @interaction.destroy!
+    end
+
+    assert_equal %w[0 1 0], streams.map { |stream| stream.at_css("strong##{target}").text }
+    assert streams.all? { |stream| stream["action"] == "replace" && stream["target"] == target }
   end
 
   # Context 2: Validations & Business Constraints

@@ -14,12 +14,16 @@
         <div><span>Издатель</span><strong><%= @game.publisher || "—" %></strong></div>
         <div><span>Платформы</span><strong><%= @game.platforms || "PC" %></strong></div>
       </div>
+      <p aria-live="polite">Лайки <%= render "games/likes_count", game: @game %></p>
+      <%= turbo_stream_from @game, :likes if @interaction %>
       <p class="detail-description"><%= @game.description %></p>
       <% if @game.tags.any? %>
         <div class="tag-list"><% @game.tags.each do |tag| %><span class="tag">#<%= tag.name %></span><% end %></div>
       <% end %>
     </article>
-    <%= render partial: "interactions/form", locals: { game: @game, interaction: @interaction } %>
+    <aside class="interaction-panel">
+      <%= render "interactions/form", game: @game, interaction: @interaction %>
+    </aside>
   </div>
 
   <% if @similar_games.any? %>

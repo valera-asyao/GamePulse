@@ -11,8 +11,22 @@ class Interaction < ApplicationRecord
 
   after_save :refresh_metrics_and_recommendations
   after_destroy :refresh_metrics_and_recommendations
+  after_commit :broadcast_likes_count, if: :likes_count_changed?
 
   private
+
+  def likes_count_changed?
+    destroyed? ? liked? : saved_change_to_liked?
+  end
+
+  def broadcast_likes_count
+    Turbo::StreamsChannel.broadcast_replace_to(
+      game, :likes,
+      target: ActionView::RecordIdentifier.dom_id(game, :likes_count),
+      partial: "games/likes_count",
+      locals: { game: game }
+    )
+  end
 
   def refresh_metrics_and_recommendations
     game.update_metrics!
